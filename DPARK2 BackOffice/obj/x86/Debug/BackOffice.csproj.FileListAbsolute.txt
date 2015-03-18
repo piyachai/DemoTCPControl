@@ -1,0 +1,537 @@
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.dll.config
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketTopUp.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll.licenses
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll
+E:\Google Drive\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketTopUp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\65 fix bug\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\BackOffice.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\BackOffice.dll.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmClearTicketInParking.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionMoreInfo.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\BackOffice.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\bin\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionMoreInfo.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmClearTicketInParking.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.rpTransactionMoreInfo.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\BackOffice.dll.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionMoreInfo.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmClearTicketInParking.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.rpTransactionMoreInfo.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.manifest
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.application
+E:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionMoreInfo.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmClearTicketInParking.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTransactionConfig.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMember.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesMonth.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesDay.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxAddRateOfCompanyStamp.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmParkingArea.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxCalculateParkingRent.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckTransactionAll.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmOwnerCompany.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxParkingRent.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmAccessRight.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxPrepaidCoupon.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmPricesVisitorProfile.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxRateOfPrepaid.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.frmxTicketActivation.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCars.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCarType.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketMemberType.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.rpTransactionMoreInfo.resources
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\AForge.Video.DirectShow.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe.config
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe.manifest
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.application
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\bin\Debug\BackOffice.exe
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.licenses
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe.manifest
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.application
+D:\Dropbox\DEV\C#\108-Dpark\Combine\70 Fix Macro\DPARK2 BackOffice\obj\x86\Debug\BackOffice.exe
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\BackOffice.dll.config
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\BackOffice.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.rpTransactionMoreInfo.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll.licenses
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csprojResolveAssemblyReference.cache
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckAccountingAll.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmCheckCashierStatic.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSysUser.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTakePayment.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicket2.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmTicketAddGroup.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportCashierLogout.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportChkIn.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmDBConnectionConfig.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmLogin.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmMainBackoffice.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmControlList.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.fmSystemParamConfig.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.TextBoxBink.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.PrintRibbonControllerResources.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.Properties.Resources.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportReceipt.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.reportTakeTicketReceipt.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.rpTransactionMoreInfo.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.csproj.GenerateResource.Cache
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll.licenses
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\obj\x86\Debug\BackOffice.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\BackOffice.dll.config
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\BackOffice.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\BackOffice.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.Extended.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\DPARK2 BackOffice\bin\Debug\EntityFramework.SqlServer.xml

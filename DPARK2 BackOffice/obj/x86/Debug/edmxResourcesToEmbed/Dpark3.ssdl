@@ -1,0 +1,1779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Dpark3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="accounting">
+    <Key>
+      <PropertyRef Name="accountingID" />
+    </Key>
+    <Property Name="accountingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="accountingPrices" Type="float" Nullable="false" />
+    <Property Name="accountingDiscount" Type="float" Nullable="false" />
+    <Property Name="accountingReceive" Type="float" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="accountingDateTime" Type="datetime" Nullable="false" />
+    <Property Name="accountingTypeID" Type="int" Nullable="false" />
+    <Property Name="accountingComment" Type="varchar" MaxLength="15" />
+    <Property Name="ticketID" Type="int" />
+    <Property Name="numOfPerson" Type="int" />
+    <Property Name="realNumOfPerson" Type="int" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="15" />
+    <Property Name="cancleProblemComment" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="accountingType">
+    <Key>
+      <PropertyRef Name="accountingTypeID" />
+    </Key>
+    <Property Name="accountingTypeID" Type="int" Nullable="false" />
+    <Property Name="accountingTypeCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="accountingTypeName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="car">
+    <Key>
+      <PropertyRef Name="carID" />
+    </Key>
+    <Property Name="carID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carTypeID" Type="int" />
+    <Property Name="carModel" Type="varchar" MaxLength="20" />
+    <Property Name="carColor" Type="varchar" MaxLength="20" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ProvinceID" Type="int" />
+    <Property Name="carBrandID" Type="int" />
+  </EntityType>
+  <EntityType Name="car_carBrand">
+    <Key>
+      <PropertyRef Name="carBrandID" />
+    </Key>
+    <Property Name="carBrandID" Type="int" Nullable="false" />
+    <Property Name="carBrandName" Type="varchar" MaxLength="50" />
+    <Property Name="carBrandOrderIndex" Type="int" />
+  </EntityType>
+  <EntityType Name="car_carType">
+    <Key>
+      <PropertyRef Name="carTypeID" />
+    </Key>
+    <Property Name="carTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="carTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="carTypeComment" Type="varchar" MaxLength="50" />
+    <Property Name="carTypeActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.DLSCalendar' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DLSCalendar">
+    <Key>
+      <PropertyRef Name="CalendarId" />
+      <PropertyRef Name="DateValue" />
+      <PropertyRef Name="DayNumberOfWeek" />
+      <PropertyRef Name="NameOfDay" />
+      <PropertyRef Name="NameOfMonth" />
+      <PropertyRef Name="WeekOfYear" />
+      <PropertyRef Name="JulianDay" />
+      <PropertyRef Name="USAIsBankHoliday" />
+    </Key>
+    <Property Name="CalendarId" Type="int" Nullable="false" />
+    <Property Name="DateValue" Type="date" Nullable="false" />
+    <Property Name="DayNumberOfWeek" Type="int" Nullable="false" />
+    <Property Name="NameOfDay" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NameOfMonth" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="WeekOfYear" Type="int" Nullable="false" />
+    <Property Name="JulianDay" Type="int" Nullable="false" />
+    <Property Name="USAIsBankHoliday" Type="bit" Nullable="false" />
+    <Property Name="USADayName" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DLSHour">
+    <Key>
+      <PropertyRef Name="hour_id" />
+    </Key>
+    <Property Name="hour_id" Type="int" Nullable="false" />
+    <Property Name="hh:mm" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="param_blackListVehicle">
+    <Key>
+      <PropertyRef Name="blacklistID" />
+    </Key>
+    <Property Name="blacklistID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plateNumber" Type="varchar(max)" />
+    <Property Name="blacklistUpdate" Type="date" />
+  </EntityType>
+  <EntityType Name="param_holiday">
+    <Key>
+      <PropertyRef Name="holidayId" />
+    </Key>
+    <Property Name="holidayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mDate" Type="date" />
+  </EntityType>
+  <EntityType Name="param_province">
+    <Key>
+      <PropertyRef Name="provinceID" />
+    </Key>
+    <Property Name="provinceID" Type="int" Nullable="false" />
+    <Property Name="provinceName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="param_systemLog">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="logType" Type="int" Nullable="false" />
+    <Property Name="logDes" Type="varchar" MaxLength="255" />
+    <Property Name="logTime" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="param_systemParam">
+    <Key>
+      <PropertyRef Name="systemParamID" />
+    </Key>
+    <Property Name="systemParamID" Type="int" Nullable="false" />
+    <Property Name="systemParamKey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="systemParamValue" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="parkingArea">
+    <Key>
+      <PropertyRef Name="parkingAreaID" />
+    </Key>
+    <Property Name="parkingAreaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="parkingAreaName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parkingAreaSlotAvaliable" Type="int" Nullable="false" />
+    <Property Name="parkingAreaActive" Type="bit" Nullable="false" />
+    <Property Name="parkingAreaOpenTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="parkingAreaCloseTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="parkingAreaComment" Type="varchar" MaxLength="50" />
+    <Property Name="OnwerCompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="parkingArea_reservParking">
+    <Key>
+      <PropertyRef Name="reservParkingID" />
+    </Key>
+    <Property Name="reservParkingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ticketID" Type="varchar" MaxLength="255" />
+    <Property Name="reservParkingSlotID" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sys_gate-Match-reader">
+    <Key>
+      <PropertyRef Name="gatelMatchReaderID" />
+    </Key>
+    <Property Name="gatelMatchReaderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="gateID" Type="int" />
+    <Property Name="readerID" Type="int" />
+  </EntityType>
+  <EntityType Name="sys_permission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="int" Nullable="false" />
+    <Property Name="permissionName" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sys_sysUserType_permission">
+    <Key>
+      <PropertyRef Name="sysUserTypePermissionID" />
+    </Key>
+    <Property Name="sysUserTypePermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sysUserTypeID" Type="int" Nullable="false" />
+    <Property Name="permissionID" Type="int" Nullable="false" />
+    <Property Name="sysUserTypePermissionNew" Type="bit" Nullable="false" />
+    <Property Name="sysUserTypePermissionRead" Type="bit" Nullable="false" />
+    <Property Name="sysUserTypePermissionDel" Type="bit" Nullable="false" />
+    <Property Name="sysUserTypePermissionEdit" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="sysGate">
+    <Key>
+      <PropertyRef Name="gateID" />
+    </Key>
+    <Property Name="gateID" Type="int" Nullable="false" />
+    <Property Name="gateName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="gateLocation" Type="varchar" MaxLength="50" />
+    <Property Name="gateDirection" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parkingAreaID" Type="int" Nullable="false" />
+    <Property Name="gateIsAutoType" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysOwnerCompany">
+    <Key>
+      <PropertyRef Name="ownerCompanyID" />
+    </Key>
+    <Property Name="ownerCompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ownerCompanyName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ownerCompanyCodeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ownerCompanyActive" Type="bit" Nullable="false" />
+    <Property Name="ownerCompanyAddr" Type="varchar" MaxLength="255" />
+    <Property Name="ownerCompanyTel" Type="varchar" MaxLength="50" />
+    <Property Name="ownerCompanyEmail" Type="varchar" MaxLength="50" />
+    <Property Name="ownerCompanyFax" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysReader">
+    <Key>
+      <PropertyRef Name="readerID" />
+    </Key>
+    <Property Name="readerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="readerType" Type="varchar" MaxLength="50" />
+    <Property Name="readerName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysUser">
+    <Key>
+      <PropertyRef Name="sysUserID" />
+    </Key>
+    <Property Name="sysUserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sysUserLoginName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="sysUserPassword" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="sysUserTel" Type="varchar" MaxLength="12" />
+    <Property Name="sysUserPhone" Type="varchar" MaxLength="12" />
+    <Property Name="sysUserEmail" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserAddr" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserExpiryDate" Type="datetime" Nullable="false" />
+    <Property Name="sysUserActive" Type="bit" Nullable="false" />
+    <Property Name="OwnerCompanyID" Type="int" />
+    <Property Name="sysUserTypeID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysUserLog">
+    <Key>
+      <PropertyRef Name="sysUserLogID" />
+    </Key>
+    <Property Name="sysUserLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sysUserID" Type="int" Nullable="false" />
+    <Property Name="sysUserLogType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sysUserLogTime" Type="datetime" Nullable="false" />
+    <Property Name="sysUserLogMachineName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysUserType">
+    <Key>
+      <PropertyRef Name="sysUserTypeID" />
+    </Key>
+    <Property Name="sysUserTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sysUserTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sysUserTypeDes" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserTypeComment" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticketID" />
+    </Key>
+    <Property Name="ticketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ticketTypeID" Type="int" Nullable="false" />
+    <Property Name="ticketMemberID" Type="int" />
+    <Property Name="ticketStartDate" Type="datetime" Nullable="false" />
+    <Property Name="ticketExpiryDate" Type="datetime" Nullable="false" />
+    <Property Name="ticketRemainDay" Type="varchar" MaxLength="14" StoreGeneratedPattern="Computed" />
+    <Property Name="ticketRemainSecond" Type="int" StoreGeneratedPattern="Computed" />
+    <Property Name="ticketActive" Type="bit" Nullable="false" />
+    <Property Name="ticketRemainTimes" Type="int" Nullable="false" />
+    <Property Name="ticketCredit" Type="float" Nullable="false" />
+    <Property Name="userID_Create" Type="int" Nullable="false" />
+    <Property Name="ticketDateUpdate" Type="datetime" Nullable="false" />
+    <Property Name="carID" Type="int" />
+    <Property Name="priceMonthlyID" Type="int" />
+  </EntityType>
+  <EntityType Name="ticketMember">
+    <Key>
+      <PropertyRef Name="ticketMemberID" />
+    </Key>
+    <Property Name="ticketMemberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ticketMemberName" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ticketMemberTel" Type="varchar" MaxLength="13" />
+    <Property Name="ticketMemberAddr" Type="varchar" MaxLength="50" />
+    <Property Name="ticketMemberEmail" Type="varchar" MaxLength="80" />
+    <Property Name="ticketMemberActive" Type="bit" Nullable="false" />
+    <Property Name="ticketMemberTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ticketMemberType">
+    <Key>
+      <PropertyRef Name="ticketMemberTypeID" />
+    </Key>
+    <Property Name="ticketMemberTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ticketMemberTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ticketMemberTypeComment" Type="varchar" MaxLength="50" />
+    <Property Name="ticketMemberTypeActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ticketType">
+    <Key>
+      <PropertyRef Name="ticketTypeId" />
+    </Key>
+    <Property Name="ticketTypeId" Type="int" Nullable="false" />
+    <Property Name="ticketTypeName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ticketTypeDes" Type="varchar" MaxLength="50" />
+    <Property Name="ticketTypePolicy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tran_emergencyType">
+    <Key>
+      <PropertyRef Name="emergencyTypeID" />
+    </Key>
+    <Property Name="emergencyTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emergencyTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsGateInUsed" Type="bit" Nullable="false" />
+    <Property Name="IsGateOutUsed" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceDialy">
+    <Key>
+      <PropertyRef Name="priceDialyID" />
+    </Key>
+    <Property Name="priceDialyID" Type="int" Nullable="false" />
+    <Property Name="priceDialyRate" Type="float" Nullable="false" />
+    <Property Name="priceDayName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.tran.priceMonthly' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tran_priceMonthly">
+    <Key>
+      <PropertyRef Name="priceMonthlyID" />
+      <PropertyRef Name="priceMonthlyName" />
+      <PropertyRef Name="priceMonthlyValue" />
+      <PropertyRef Name="priceMonthlyActive" />
+    </Key>
+    <Property Name="priceMonthlyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="priceMonthlyName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="priceMonthlyValue" Type="int" Nullable="false" />
+    <Property Name="priceMonthlyActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceProfile">
+    <Key>
+      <PropertyRef Name="priceProfileID" />
+    </Key>
+    <Property Name="priceProfileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="priceProfileActive" Type="bit" Nullable="false" />
+    <Property Name="carTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileFlooringMode" Type="bit" Nullable="false" />
+    <Property Name="priceProfileLostCardFee" Type="float" Nullable="false" />
+    <Property Name="ticketMemberTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileOverNightFee" Type="float" Nullable="false" />
+    <Property Name="priceProfileMultiOverNightMode" Type="int" />
+    <Property Name="priceProfileTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileDiscountInCashier" Type="bit" Nullable="false" />
+    <Property Name="priceProfileColor" Type="int" Nullable="false" />
+    <Property Name="priceProfileFlooringOffset" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileChangeLog">
+    <Key>
+      <PropertyRef Name="priceProfileChangeLogID" />
+    </Key>
+    <Property Name="priceProfileChangeLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="priceProfileOldID" Type="int" Nullable="false" />
+    <Property Name="priceProfileNewID" Type="int" Nullable="false" />
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="sysUserID" Type="int" Nullable="false" />
+    <Property Name="priceProfileChangeLogDateTime" Type="datetime" Nullable="false" />
+    <Property Name="priceProfileChangeLogComment" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileDay">
+    <Key>
+      <PropertyRef Name="priceProfileDayID" />
+    </Key>
+    <Property Name="priceProfileDayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="priceProfileDayNumOfDay" Type="int" Nullable="false" />
+    <Property Name="priceProfileDayFreeTime" Type="int" Nullable="false" />
+    <Property Name="priceProfileDayServiceCharge" Type="float" Nullable="false" />
+    <Property Name="priceProfileID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileHour">
+    <Key>
+      <PropertyRef Name="priceProfileHourID" />
+    </Key>
+    <Property Name="priceProfileHourID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="priceProfileHourNo" Type="int" Nullable="false" />
+    <Property Name="priceProfileHourRate" Type="float" Nullable="false" />
+    <Property Name="priceProfileDayID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileType">
+    <Key>
+      <PropertyRef Name="priceProfileTypeID" />
+    </Key>
+    <Property Name="priceProfileTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_transaction">
+    <Key>
+      <PropertyRef Name="transactionID" />
+    </Key>
+    <Property Name="transactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transactionChkIn" Type="datetime" Nullable="false" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserID_ChkIn" Type="int" Nullable="false" />
+    <Property Name="accountingID" Type="int" />
+    <Property Name="numOfPerson" Type="int" />
+    <Property Name="realNumOfPerson" Type="int" />
+    <Property Name="transactionTypeID" Type="int" />
+    <Property Name="transactionParkingTime" Type="varchar" MaxLength="12" StoreGeneratedPattern="Computed" />
+    <Property Name="transactionLastUpdate" Type="datetime" />
+    <Property Name="priceProfileID" Type="int" />
+    <Property Name="transactionChkOut" Type="datetime" />
+    <Property Name="transactionComment" Type="varchar" MaxLength="50" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="carPlateCity" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserID_ChkOut" Type="int" />
+    <Property Name="gateID_IN" Type="int" />
+    <Property Name="gateID_OUT" Type="int" />
+    <Property Name="transactionIsLostCard" Type="bit" />
+  </EntityType>
+  <EntityType Name="tran_transaction2">
+    <Key>
+      <PropertyRef Name="transactionID" />
+    </Key>
+    <Property Name="transactionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="transactionChkIn" Type="datetime" Nullable="false" />
+    <Property Name="sysUserID_ChkIn" Type="int" Nullable="false" />
+    <Property Name="priceProfileID" Type="int" />
+    <Property Name="accountingID" Type="int" />
+  </EntityType>
+  <EntityType Name="tran_transactionType">
+    <Key>
+      <PropertyRef Name="transactionTypeID" />
+    </Key>
+    <Property Name="transactionTypeID" Type="int" Nullable="false" />
+    <Property Name="transactionTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VMS_LOG">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="visitorName" Type="varchar" MaxLength="50" />
+    <Property Name="visitorNote" Type="varchar" MaxLength="50" />
+    <Property Name="visitorTel" Type="varchar" MaxLength="50" />
+    <Property Name="visitorCarNumber" Type="varchar" MaxLength="50" />
+    <Property Name="visitorEmail" Type="varchar" MaxLength="50" />
+    <Property Name="visit_purpose" Type="varchar" MaxLength="50" />
+    <Property Name="visit_person_id" Type="varchar" MaxLength="50" />
+    <Property Name="visitorCompany" Type="varchar" MaxLength="50" />
+    <Property Name="visitorChkIn" Type="datetime" />
+    <Property Name="visitorChkOut" Type="datetime" />
+    <Property Name="tosee_name" Type="varchar" MaxLength="50" />
+    <Property Name="tosee_addr" Type="varchar" MaxLength="50" />
+    <Property Name="ticketId" Type="varchar" MaxLength="50" />
+    <Property Name="visitorImg1" Type="binary" MaxLength="50" />
+    <Property Name="visitorImg2" Type="binary" MaxLength="50" />
+    <Property Name="visitorImg3" Type="binary" MaxLength="50" />
+    <Property Name="visitorCardLocation" Type="varchar" MaxLength="50" />
+    <Property Name="visitArea" Type="varchar" MaxLength="50" />
+    <Property Name="lostCard" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dpark3.dbo.grpbydate' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="grpbydate">
+          <Property Name="ForDate" Type="date" />
+          <Property Name="sumOfDate" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dpark3.dbo.grpbyhour' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="grpbyhour">
+          <Property Name="ForDate" Type="date" />
+          <Property Name="OnHour" Type="int" />
+          <Property Name="SumOfHour" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dpark3.dbo.report_Cashier' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="report_Cashier">
+          <Property Name="ChkOutUser" Type="varchar" MaxLength="20" />
+          <Property Name="tranChkOut" Type="datetime" />
+          <Property Name="accountingPrices" Type="float" />
+          <Property Name="accountingDiscount" Type="float" />
+          <Property Name="accountingReceive" Type="float" />
+          <Property Name="countOfChkOut" Type="int" />
+          <Property Name="countPaymentTime" Type="int" />
+          <Property Name="countEStamp" Type="int" />
+          <Property Name="countEmergency" Type="int" />
+          <Property Name="sysUserID_ChkOut" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.SumOfDateSeries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SumOfDateSeries">
+    <Key>
+      <PropertyRef Name="DateValue" />
+    </Key>
+    <Property Name="DateValue" Type="date" Nullable="false" />
+    <Property Name="sumOfDate" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.tmpHourOnDateSeries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tmpHourOnDateSeries">
+    <Key>
+      <PropertyRef Name="hour_id" />
+    </Key>
+    <Property Name="DateTimeValue" Type="datetime" />
+    <Property Name="hour_id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_accessright' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_accessright">
+    <Key>
+      <PropertyRef Name="permissionID" />
+      <PropertyRef Name="permissionName" />
+    </Key>
+    <Property Name="permissionID" Type="int" Nullable="false" />
+    <Property Name="permissionName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="sysUserLoginName" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserID" Type="int" />
+    <Property Name="sysUserTypeID" Type="int" />
+    <Property Name="sysUserTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserTypePermissionRead" Type="bit" />
+    <Property Name="sysUserTypePermissionNew" Type="bit" />
+    <Property Name="sysUserTypePermissionEdit" Type="bit" />
+    <Property Name="sysUserTypePermissionDel" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_accounting_all' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_accounting_all">
+    <Key>
+      <PropertyRef Name="accountingID" />
+      <PropertyRef Name="accountingPrices" />
+      <PropertyRef Name="accountingDiscount" />
+      <PropertyRef Name="accountingReceive" />
+      <PropertyRef Name="accountingDateTime" />
+      <PropertyRef Name="userID" />
+      <PropertyRef Name="accountingTypeID" />
+    </Key>
+    <Property Name="accountingID" Type="int" Nullable="false" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" />
+    <Property Name="accountingPrices" Type="float" Nullable="false" />
+    <Property Name="accountingDiscount" Type="float" Nullable="false" />
+    <Property Name="accountingReceive" Type="float" Nullable="false" />
+    <Property Name="accountingDateTime" Type="datetime" Nullable="false" />
+    <Property Name="ticketMemberName" Type="varchar" MaxLength="25" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" />
+    <Property Name="accountingTypeName" Type="varchar" MaxLength="20" />
+    <Property Name="accountingTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_accountingWithNumPerson' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_accountingWithNumPerson">
+    <Key>
+      <PropertyRef Name="accountingID" />
+      <PropertyRef Name="accountingPrices" />
+      <PropertyRef Name="accountingDiscount" />
+      <PropertyRef Name="accountingReceive" />
+      <PropertyRef Name="accountingDateTime" />
+      <PropertyRef Name="userID" />
+      <PropertyRef Name="accountingTypeID" />
+    </Key>
+    <Property Name="accountingID" Type="int" Nullable="false" />
+    <Property Name="accountingPrices" Type="float" Nullable="false" />
+    <Property Name="accountingDiscount" Type="float" Nullable="false" />
+    <Property Name="accountingReceive" Type="float" Nullable="false" />
+    <Property Name="accountingDateTime" Type="datetime" Nullable="false" />
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" />
+    <Property Name="accountingTypeName" Type="varchar" MaxLength="20" />
+    <Property Name="accountingTypeID" Type="int" Nullable="false" />
+    <Property Name="accountingComment" Type="varchar" MaxLength="15" />
+    <Property Name="numOfPerson" Type="int" />
+    <Property Name="realNumOfPerson" Type="int" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="15" />
+    <Property Name="cancleProblemComment" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_Emergency_ALL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_Emergency_ALL">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="transactionChkIn" Type="datetime" Nullable="false" />
+    <Property Name="transactionChkOut" Type="datetime" />
+    <Property Name="gateIn" Type="varchar" MaxLength="50" />
+    <Property Name="gateOut" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserIn" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserOut" Type="varchar" MaxLength="20" />
+    <Property Name="transactionLastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="transactionComment" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_EStamp_log' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_EStamp_log">
+    <Key>
+      <PropertyRef Name="priceProfileChangeLogID" />
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="priceProfileChangeLogDateTime" />
+    </Key>
+    <Property Name="priceProfileChangeLogID" Type="int" Nullable="false" />
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="priceProfileChangeLogDateTime" Type="datetime" Nullable="false" />
+    <Property Name="oldProfile" Type="varchar" MaxLength="50" />
+    <Property Name="newProfile" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" />
+    <Property Name="priceProfileChangeLogComment" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_EStamp_log_DisTinc_transID' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_EStamp_log_DisTinc_transID">
+    <Key>
+      <PropertyRef Name="transactionID" />
+    </Key>
+    <Property Name="Last_priceProfileChangeLogID" Type="int" />
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="priceProfileChangeLogDateTime" Type="datetime" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Dpark3.dbo.view_isParkingInArea' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="view_isParkingInArea">
+          <Property Name="count" Type="int" />
+          <Property Name="parkingAreaID" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_parkingAreaInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_parkingAreaInfo">
+    <Key>
+      <PropertyRef Name="parkingAreaID" />
+      <PropertyRef Name="parkingAreaName" />
+      <PropertyRef Name="parkingAreaSlotAvaliable" />
+    </Key>
+    <Property Name="parkingAreaID" Type="int" Nullable="false" />
+    <Property Name="parkingAreaName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="parkingAreaSlotAvaliable" Type="int" Nullable="false" />
+    <Property Name="count" Type="int" />
+    <Property Name="parkingAreaSlotRemain" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_priceProfile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_priceProfile">
+    <Key>
+      <PropertyRef Name="priceProfileID" />
+      <PropertyRef Name="priceProfileDayID" />
+      <PropertyRef Name="priceProfileName" />
+      <PropertyRef Name="priceProfileActive" />
+      <PropertyRef Name="carTypeID" />
+      <PropertyRef Name="priceProfileFlooringMode" />
+      <PropertyRef Name="priceProfileLostCardFee" />
+      <PropertyRef Name="priceProfileOverNightFee" />
+      <PropertyRef Name="ticketMemberTypeID" />
+      <PropertyRef Name="priceProfileTypeID" />
+      <PropertyRef Name="priceProfileDayFreeTime" />
+      <PropertyRef Name="priceProfileDayServiceCharge" />
+      <PropertyRef Name="priceProfileDayNumOfDay" />
+      <PropertyRef Name="priceProfileHourID" />
+      <PropertyRef Name="priceProfileHourNo" />
+      <PropertyRef Name="priceProfileHourRate" />
+      <PropertyRef Name="priceProfileDiscountInCashier" />
+      <PropertyRef Name="priceProfileColor" />
+      <PropertyRef Name="priceProfileFlooringOffset" />
+    </Key>
+    <Property Name="priceProfileID" Type="int" Nullable="false" />
+    <Property Name="priceProfileDayID" Type="int" Nullable="false" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="priceProfileActive" Type="bit" Nullable="false" />
+    <Property Name="carTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileFlooringMode" Type="bit" Nullable="false" />
+    <Property Name="priceProfileLostCardFee" Type="float" Nullable="false" />
+    <Property Name="priceProfileOverNightFee" Type="float" Nullable="false" />
+    <Property Name="priceProfileMultiOverNightMode" Type="int" />
+    <Property Name="ticketMemberTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileTypeID" Type="int" Nullable="false" />
+    <Property Name="priceProfileDayFreeTime" Type="int" Nullable="false" />
+    <Property Name="priceProfileDayServiceCharge" Type="float" Nullable="false" />
+    <Property Name="priceProfileDayNumOfDay" Type="int" Nullable="false" />
+    <Property Name="priceProfileHourID" Type="int" Nullable="false" />
+    <Property Name="priceProfileHourNo" Type="int" Nullable="false" />
+    <Property Name="priceProfileHourRate" Type="float" Nullable="false" />
+    <Property Name="priceProfileDiscountInCashier" Type="bit" Nullable="false" />
+    <Property Name="priceProfileColor" Type="int" Nullable="false" />
+    <Property Name="priceProfileFlooringOffset" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_ticketInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_ticketInfo">
+    <Key>
+      <PropertyRef Name="ticketID" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="ticketTypeID" />
+      <PropertyRef Name="ticketStartDate" />
+      <PropertyRef Name="ticketExpiryDate" />
+      <PropertyRef Name="ticketActive" />
+      <PropertyRef Name="ticketRemainTimes" />
+      <PropertyRef Name="ticketCredit" />
+      <PropertyRef Name="ticketDateUpdate" />
+      <PropertyRef Name="userID_Create" />
+    </Key>
+    <Property Name="ticketID" Type="int" Nullable="false" />
+    <Property Name="ticketMemberID" Type="int" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ticketMemberName" Type="varchar" MaxLength="25" />
+    <Property Name="ticketTypeID" Type="int" Nullable="false" />
+    <Property Name="ticketTypeName" Type="varchar" MaxLength="20" />
+    <Property Name="ticketStartDate" Type="datetime" Nullable="false" />
+    <Property Name="ticketExpiryDate" Type="datetime" Nullable="false" />
+    <Property Name="ticketActive" Type="bit" Nullable="false" />
+    <Property Name="ticketRemainTimes" Type="int" Nullable="false" />
+    <Property Name="ticketCredit" Type="float" Nullable="false" />
+    <Property Name="ticketDateUpdate" Type="datetime" Nullable="false" />
+    <Property Name="sysUserName" Type="varchar" MaxLength="20" />
+    <Property Name="userID_Create" Type="int" Nullable="false" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="carBrandName" Type="varchar" MaxLength="50" />
+    <Property Name="carTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="provinceName" Type="varchar" MaxLength="50" />
+    <Property Name="ticketMemberTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="carModel" Type="varchar" MaxLength="20" />
+    <Property Name="carColor" Type="varchar" MaxLength="20" />
+    <Property Name="ticketMemberTel" Type="varchar" MaxLength="13" />
+    <Property Name="ticketMemberEmail" Type="varchar" MaxLength="80" />
+    <Property Name="ticketMemberAddr" Type="varchar" MaxLength="50" />
+    <Property Name="carID" Type="int" />
+    <Property Name="ticketRemainDay" Type="varchar" MaxLength="14" />
+    <Property Name="ticketRemainSecond" Type="int" />
+    <Property Name="priceMonthlyID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_transaction_all' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_transaction_all">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="transactionTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="transactionChkIn" Type="datetime" Nullable="false" />
+    <Property Name="transactionChkOut" Type="datetime" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="gateIn" Type="varchar" MaxLength="50" />
+    <Property Name="gateOut" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserIn" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserOut" Type="varchar" MaxLength="20" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="carPlateCity" Type="varchar" MaxLength="20" />
+    <Property Name="transactionLastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="transactionComment" Type="varchar" MaxLength="50" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="50" />
+    <Property Name="priceProfileColor" Type="int" />
+    <Property Name="transactionParkingTime" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_transaction_all_parkingTime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_transaction_all_parkingTime">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="int" Nullable="false" />
+    <Property Name="transactionTypeName" Type="varchar" MaxLength="50" />
+    <Property Name="transactionChkIn" Type="datetime" Nullable="false" />
+    <Property Name="transactionChkOut" Type="datetime" />
+    <Property Name="parkingTime" Type="int" />
+    <Property Name="ticketNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="gateIn" Type="varchar" MaxLength="50" />
+    <Property Name="gateOut" Type="varchar" MaxLength="50" />
+    <Property Name="sysUserIn" Type="varchar" MaxLength="20" />
+    <Property Name="sysUserOut" Type="varchar" MaxLength="20" />
+    <Property Name="carPlateNumber" Type="varchar" MaxLength="8" />
+    <Property Name="carPlateCity" Type="varchar" MaxLength="20" />
+    <Property Name="transactionLastUpdate" Type="datetime" Nullable="false" />
+    <Property Name="transactionComment" Type="varchar" MaxLength="50" />
+    <Property Name="priceProfileName" Type="varchar" MaxLength="50" />
+    <Property Name="transactionParkingTime" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Dpark3.dbo.view_VMS_log_stayTime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="view_VMS_log_stayTime">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="visitorName" Type="varchar" MaxLength="50" />
+    <Property Name="visitorNote" Type="varchar" MaxLength="50" />
+    <Property Name="visitorTel" Type="varchar" MaxLength="50" />
+    <Property Name="visitorCarNumber" Type="varchar" MaxLength="50" />
+    <Property Name="visitorEmail" Type="varchar" MaxLength="50" />
+    <Property Name="visit_purpose" Type="varchar" MaxLength="50" />
+    <Property Name="visit_person_id" Type="varchar" MaxLength="50" />
+    <Property Name="visitorCompany" Type="varchar" MaxLength="50" />
+    <Property Name="visitorChkIn" Type="datetime" />
+    <Property Name="visitorChkOut" Type="datetime" />
+    <Property Name="tosee_name" Type="varchar" MaxLength="50" />
+    <Property Name="tosee_addr" Type="varchar" MaxLength="50" />
+    <Property Name="ticketId" Type="varchar" MaxLength="50" />
+    <Property Name="visitorImg1" Type="binary" MaxLength="50" />
+    <Property Name="visitorImg2" Type="binary" MaxLength="50" />
+    <Property Name="visitorImg3" Type="binary" MaxLength="50" />
+    <Property Name="visitorCardLocation" Type="varchar" MaxLength="50" />
+    <Property Name="visitArea" Type="varchar" MaxLength="50" />
+    <Property Name="lostCard" Type="bit" />
+    <Property Name="MinuteDiff" Type="int" />
+  </EntityType>
+  <Association Name="FK_accounting_accountingType">
+    <End Role="accountingType" Type="Self.accountingType" Multiplicity="1" />
+    <End Role="accounting" Type="Self.accounting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accountingType">
+        <PropertyRef Name="accountingTypeID" />
+      </Principal>
+      <Dependent Role="accounting">
+        <PropertyRef Name="accountingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_accounting_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="accounting" Type="Self.accounting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="accounting">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_building_company_1">
+    <End Role="sysOwnerCompany" Type="Self.sysOwnerCompany" Multiplicity="1" />
+    <End Role="parkingArea" Type="Self.parkingArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysOwnerCompany">
+        <PropertyRef Name="ownerCompanyID" />
+      </Principal>
+      <Dependent Role="parkingArea">
+        <PropertyRef Name="OnwerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_car_carBrand">
+    <End Role="car_carBrand" Type="Self.car_carBrand" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carBrand">
+        <PropertyRef Name="carBrandID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="carBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_car_carType">
+    <End Role="car_carType" Type="Self.car_carType" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carType">
+        <PropertyRef Name="carTypeID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="carTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_param_province">
+    <End Role="param_province" Type="Self.param_province" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="param_province">
+        <PropertyRef Name="provinceID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="ProvinceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_gate-Match-reader_sys_reader">
+    <End Role="sysReader" Type="Self.sysReader" Multiplicity="0..1" />
+    <End Role="sys_gate-Match-reader" Type="Self.sys_gate-Match-reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysReader">
+        <PropertyRef Name="readerID" />
+      </Principal>
+      <Dependent Role="sys_gate-Match-reader">
+        <PropertyRef Name="readerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_permis_control_sys_controllist">
+    <End Role="sysUserType" Type="Self.sysUserType" Multiplicity="1" />
+    <End Role="sys_sysUserType_permission" Type="Self.sys_sysUserType_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUserType">
+        <PropertyRef Name="sysUserTypeID" />
+      </Principal>
+      <Dependent Role="sys_sysUserType_permission">
+        <PropertyRef Name="sysUserTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_sysUserType_permission_sys_permission">
+    <End Role="sys_permission" Type="Self.sys_permission" Multiplicity="1" />
+    <End Role="sys_sysUserType_permission" Type="Self.sys_sysUserType_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sys_permission">
+        <PropertyRef Name="permissionID" />
+      </Principal>
+      <Dependent Role="sys_sysUserType_permission">
+        <PropertyRef Name="permissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysGate_parkingArea">
+    <End Role="parkingArea" Type="Self.parkingArea" Multiplicity="1" />
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parkingArea">
+        <PropertyRef Name="parkingAreaID" />
+      </Principal>
+      <Dependent Role="sysGate">
+        <PropertyRef Name="parkingAreaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUser_sysOwnerCompany">
+    <End Role="sysOwnerCompany" Type="Self.sysOwnerCompany" Multiplicity="0..1" />
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysOwnerCompany">
+        <PropertyRef Name="ownerCompanyID" />
+      </Principal>
+      <Dependent Role="sysUser">
+        <PropertyRef Name="OwnerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUser_sysUserType">
+    <End Role="sysUserType" Type="Self.sysUserType" Multiplicity="0..1" />
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUserType">
+        <PropertyRef Name="sysUserTypeID" />
+      </Principal>
+      <Dependent Role="sysUser">
+        <PropertyRef Name="sysUserTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserLog_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="sysUserLog" Type="Self.sysUserLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="sysUserLog">
+        <PropertyRef Name="sysUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_accounting">
+    <End Role="accounting" Type="Self.accounting" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounting">
+        <PropertyRef Name="accountingID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="priceMonthlyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_car">
+    <End Role="car" Type="Self.car" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car">
+        <PropertyRef Name="carID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="carID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="userID_Create" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_ticketType">
+    <End Role="ticketType" Type="Self.ticketType" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketType">
+        <PropertyRef Name="ticketTypeId" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="ticketTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_visitor">
+    <End Role="ticketMember" Type="Self.ticketMember" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMember">
+        <PropertyRef Name="ticketMemberID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="ticketMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticketMember_ticketMemberType">
+    <End Role="ticketMemberType" Type="Self.ticketMemberType" Multiplicity="1" />
+    <End Role="ticketMember" Type="Self.ticketMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMemberType">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Principal>
+      <Dependent Role="ticketMember">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_car_carType">
+    <End Role="car_carType" Type="Self.car_carType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carType">
+        <PropertyRef Name="carTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="carTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_tran_PriceProfileType">
+    <End Role="tran_priceProfileType" Type="Self.tran_priceProfileType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfileType">
+        <PropertyRef Name="priceProfileTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_visitorType">
+    <End Role="ticketMemberType" Type="Self.ticketMemberType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMemberType">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="sysUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="priceProfileOldID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_priceProfile1">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="priceProfileNewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_transaction">
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_transaction">
+        <PropertyRef Name="transactionID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="transactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileDay_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileDay" Type="Self.tran_priceProfileDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileDay">
+        <PropertyRef Name="priceProfileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileHour_tran_priceProfileDay">
+    <End Role="tran_priceProfileDay" Type="Self.tran_priceProfileDay" Multiplicity="1" />
+    <End Role="tran_priceProfileHour" Type="Self.tran_priceProfileHour" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfileDay">
+        <PropertyRef Name="priceProfileDayID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileHour">
+        <PropertyRef Name="priceProfileDayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_accounting">
+    <End Role="accounting" Type="Self.accounting" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounting">
+        <PropertyRef Name="accountingID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="accountingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysGate">
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysGate">
+        <PropertyRef Name="gateID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="gateID_IN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysGate1">
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysGate">
+        <PropertyRef Name="gateID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="gateID_OUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="sysUserID_ChkIn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysUser1">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="sysUserID_ChkOut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="priceProfileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_tran_transactionType">
+    <End Role="tran_transactionType" Type="Self.tran_transactionType" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_transactionType">
+        <PropertyRef Name="transactionTypeID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="transactionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="stProDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startDate" Type="datetime" Mode="In" />
+    <Parameter Name="endDate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="stProDateOnMonth" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startMonth" Type="datetime" Mode="In" />
+    <Parameter Name="endMonth" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="stProHourOnDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="stProYear" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startYear" Type="int" Mode="In" />
+    <Parameter Name="endYear" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_accounting_all_bydate_userID_accType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="accountingTypeID" Type="int" Mode="In" />
+    <Parameter Name="sysUserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_accounting_saleTicket_bydate_userID_accType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="sysUserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_accounting_with_numperson" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="sysUserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_report_cashier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_report_cashier_sum" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="userId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_ticket_moreInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ticketID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_ticket_paymentHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ticketID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_allTime_byCarPlateNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="carPlateNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_allTime_bydate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_Emergency" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_ForceChkOut_byCarPlateNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="carPlateNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_InParking" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_InParking_byCarPlateNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="carPlateNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_IsLostCard_byCarPlateNumber" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="carPlateNumber" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_moreInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tranID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="tr_transaction_Stamp_Log" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="beginDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="endDateTime" Type="datetime" Mode="In" />
+    <Parameter Name="carPlateNumber" Type="varchar" Mode="In" />
+    <Parameter Name="ticketNumber" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="Dpark3ModelStoreContainer">
+    <EntitySet Name="accounting" EntityType="Self.accounting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="accountingType" EntityType="Self.accountingType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="car" EntityType="Self.car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="car_carBrand" EntityType="Self.car_carBrand" Schema="dbo" Table="car.carBrand" store:Type="Tables" />
+    <EntitySet Name="car_carType" EntityType="Self.car_carType" Schema="dbo" Table="car.carType" store:Type="Tables" />
+    <EntitySet Name="DLSHour" EntityType="Self.DLSHour" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="param_blackListVehicle" EntityType="Self.param_blackListVehicle" Schema="dbo" Table="param.blackListVehicle" store:Type="Tables" />
+    <EntitySet Name="param_holiday" EntityType="Self.param_holiday" Schema="dbo" Table="param.holiday" store:Type="Tables" />
+    <EntitySet Name="param_province" EntityType="Self.param_province" Schema="dbo" Table="param.province" store:Type="Tables" />
+    <EntitySet Name="param_systemLog" EntityType="Self.param_systemLog" Schema="dbo" Table="param.systemLog" store:Type="Tables" />
+    <EntitySet Name="param_systemParam" EntityType="Self.param_systemParam" Schema="dbo" Table="param.systemParam" store:Type="Tables" />
+    <EntitySet Name="parkingArea" EntityType="Self.parkingArea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="parkingArea_reservParking" EntityType="Self.parkingArea_reservParking" Schema="dbo" Table="parkingArea.reservParking" store:Type="Tables" />
+    <EntitySet Name="sys_gate-Match-reader" EntityType="Self.sys_gate-Match-reader" Schema="dbo" Table="sys.gate-Match-reader" store:Type="Tables" />
+    <EntitySet Name="sys_permission" EntityType="Self.sys_permission" Schema="dbo" Table="sys.permission" store:Type="Tables" />
+    <EntitySet Name="sys_sysUserType_permission" EntityType="Self.sys_sysUserType_permission" Schema="dbo" Table="sys.sysUserType.permission" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysGate" EntityType="Self.sysGate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysOwnerCompany" EntityType="Self.sysOwnerCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysReader" EntityType="Self.sysReader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysUser" EntityType="Self.sysUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysUserLog" EntityType="Self.sysUserLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysUserType" EntityType="Self.sysUserType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticket" EntityType="Self.ticket" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticketMember" EntityType="Self.ticketMember" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticketMemberType" EntityType="Self.ticketMemberType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ticketType" EntityType="Self.ticketType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tran_emergencyType" EntityType="Self.tran_emergencyType" Schema="dbo" Table="tran.emergencyType" store:Type="Tables" />
+    <EntitySet Name="tran_priceDialy" EntityType="Self.tran_priceDialy" Schema="dbo" Table="tran.priceDialy" store:Type="Tables" />
+    <EntitySet Name="tran_priceProfile" EntityType="Self.tran_priceProfile" Schema="dbo" Table="tran.priceProfile" store:Type="Tables" />
+    <EntitySet Name="tran_priceProfileChangeLog" EntityType="Self.tran_priceProfileChangeLog" Schema="dbo" Table="tran.priceProfileChangeLog" store:Type="Tables" />
+    <EntitySet Name="tran_priceProfileDay" EntityType="Self.tran_priceProfileDay" Schema="dbo" Table="tran.priceProfileDay" store:Type="Tables" />
+    <EntitySet Name="tran_priceProfileHour" EntityType="Self.tran_priceProfileHour" Schema="dbo" Table="tran.priceProfileHour" store:Type="Tables" />
+    <EntitySet Name="tran_priceProfileType" EntityType="Self.tran_priceProfileType" Schema="dbo" Table="tran.priceProfileType" store:Type="Tables" />
+    <EntitySet Name="tran_transaction" EntityType="Self.tran_transaction" Schema="dbo" Table="tran.transaction" store:Type="Tables" />
+    <EntitySet Name="tran_transaction2" EntityType="Self.tran_transaction2" Schema="dbo" Table="tran.transaction2" store:Type="Tables" />
+    <EntitySet Name="tran_transactionType" EntityType="Self.tran_transactionType" Schema="dbo" Table="tran.transactionType" store:Type="Tables" />
+    <EntitySet Name="VMS_LOG" EntityType="Self.VMS_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DLSCalendar" EntityType="Self.DLSCalendar" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DLSCalendar].[CalendarId] AS [CalendarId], 
+    [DLSCalendar].[DateValue] AS [DateValue], 
+    [DLSCalendar].[DayNumberOfWeek] AS [DayNumberOfWeek], 
+    [DLSCalendar].[NameOfDay] AS [NameOfDay], 
+    [DLSCalendar].[NameOfMonth] AS [NameOfMonth], 
+    [DLSCalendar].[WeekOfYear] AS [WeekOfYear], 
+    [DLSCalendar].[JulianDay] AS [JulianDay], 
+    [DLSCalendar].[USAIsBankHoliday] AS [USAIsBankHoliday], 
+    [DLSCalendar].[USADayName] AS [USADayName]
+    FROM [dbo].[DLSCalendar] AS [DLSCalendar]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tran_priceMonthly" EntityType="Self.tran_priceMonthly" store:Type="Tables" store:Schema="dbo" store:Name="tran.priceMonthly">
+      <DefiningQuery>SELECT 
+    [tran_priceMonthly].[priceMonthlyID] AS [priceMonthlyID], 
+    [tran_priceMonthly].[priceMonthlyName] AS [priceMonthlyName], 
+    [tran_priceMonthly].[priceMonthlyValue] AS [priceMonthlyValue], 
+    [tran_priceMonthly].[priceMonthlyActive] AS [priceMonthlyActive]
+    FROM [dbo].[tran.priceMonthly] AS [tran_priceMonthly]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SumOfDateSeries" EntityType="Self.SumOfDateSeries" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SumOfDateSeries].[DateValue] AS [DateValue], 
+    [SumOfDateSeries].[sumOfDate] AS [sumOfDate]
+    FROM [dbo].[SumOfDateSeries] AS [SumOfDateSeries]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tmpHourOnDateSeries" EntityType="Self.tmpHourOnDateSeries" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tmpHourOnDateSeries].[DateTimeValue] AS [DateTimeValue], 
+    [tmpHourOnDateSeries].[hour_id] AS [hour_id]
+    FROM [dbo].[tmpHourOnDateSeries] AS [tmpHourOnDateSeries]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_accessright" EntityType="Self.view_accessright" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_accessright].[permissionID] AS [permissionID], 
+    [view_accessright].[permissionName] AS [permissionName], 
+    [view_accessright].[sysUserLoginName] AS [sysUserLoginName], 
+    [view_accessright].[sysUserID] AS [sysUserID], 
+    [view_accessright].[sysUserTypeID] AS [sysUserTypeID], 
+    [view_accessright].[sysUserTypeName] AS [sysUserTypeName], 
+    [view_accessright].[sysUserTypePermissionRead] AS [sysUserTypePermissionRead], 
+    [view_accessright].[sysUserTypePermissionNew] AS [sysUserTypePermissionNew], 
+    [view_accessright].[sysUserTypePermissionEdit] AS [sysUserTypePermissionEdit], 
+    [view_accessright].[sysUserTypePermissionDel] AS [sysUserTypePermissionDel]
+    FROM [dbo].[view_accessright] AS [view_accessright]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_accounting_all" EntityType="Self.view_accounting_all" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_accounting_all].[accountingID] AS [accountingID], 
+    [view_accounting_all].[ticketNumber] AS [ticketNumber], 
+    [view_accounting_all].[accountingPrices] AS [accountingPrices], 
+    [view_accounting_all].[accountingDiscount] AS [accountingDiscount], 
+    [view_accounting_all].[accountingReceive] AS [accountingReceive], 
+    [view_accounting_all].[accountingDateTime] AS [accountingDateTime], 
+    [view_accounting_all].[ticketMemberName] AS [ticketMemberName], 
+    [view_accounting_all].[carPlateNumber] AS [carPlateNumber], 
+    [view_accounting_all].[userID] AS [userID], 
+    [view_accounting_all].[sysUserName] AS [sysUserName], 
+    [view_accounting_all].[accountingTypeName] AS [accountingTypeName], 
+    [view_accounting_all].[accountingTypeID] AS [accountingTypeID]
+    FROM [dbo].[view_accounting_all] AS [view_accounting_all]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_accountingWithNumPerson" EntityType="Self.view_accountingWithNumPerson" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_accountingWithNumPerson].[accountingID] AS [accountingID], 
+    [view_accountingWithNumPerson].[accountingPrices] AS [accountingPrices], 
+    [view_accountingWithNumPerson].[accountingDiscount] AS [accountingDiscount], 
+    [view_accountingWithNumPerson].[accountingReceive] AS [accountingReceive], 
+    [view_accountingWithNumPerson].[accountingDateTime] AS [accountingDateTime], 
+    [view_accountingWithNumPerson].[userID] AS [userID], 
+    [view_accountingWithNumPerson].[sysUserName] AS [sysUserName], 
+    [view_accountingWithNumPerson].[accountingTypeName] AS [accountingTypeName], 
+    [view_accountingWithNumPerson].[accountingTypeID] AS [accountingTypeID], 
+    [view_accountingWithNumPerson].[accountingComment] AS [accountingComment], 
+    [view_accountingWithNumPerson].[numOfPerson] AS [numOfPerson], 
+    [view_accountingWithNumPerson].[realNumOfPerson] AS [realNumOfPerson], 
+    [view_accountingWithNumPerson].[priceProfileName] AS [priceProfileName], 
+    [view_accountingWithNumPerson].[cancleProblemComment] AS [cancleProblemComment]
+    FROM [dbo].[view_accountingWithNumPerson] AS [view_accountingWithNumPerson]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_Emergency_ALL" EntityType="Self.view_Emergency_ALL" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_Emergency_ALL].[transactionID] AS [transactionID], 
+    [view_Emergency_ALL].[transactionChkIn] AS [transactionChkIn], 
+    [view_Emergency_ALL].[transactionChkOut] AS [transactionChkOut], 
+    [view_Emergency_ALL].[gateIn] AS [gateIn], 
+    [view_Emergency_ALL].[gateOut] AS [gateOut], 
+    [view_Emergency_ALL].[sysUserIn] AS [sysUserIn], 
+    [view_Emergency_ALL].[sysUserOut] AS [sysUserOut], 
+    [view_Emergency_ALL].[transactionLastUpdate] AS [transactionLastUpdate], 
+    [view_Emergency_ALL].[transactionComment] AS [transactionComment]
+    FROM [dbo].[view_Emergency_ALL] AS [view_Emergency_ALL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_EStamp_log" EntityType="Self.view_EStamp_log" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_EStamp_log].[priceProfileChangeLogID] AS [priceProfileChangeLogID], 
+    [view_EStamp_log].[transactionID] AS [transactionID], 
+    [view_EStamp_log].[ticketNumber] AS [ticketNumber], 
+    [view_EStamp_log].[carPlateNumber] AS [carPlateNumber], 
+    [view_EStamp_log].[priceProfileChangeLogDateTime] AS [priceProfileChangeLogDateTime], 
+    [view_EStamp_log].[oldProfile] AS [oldProfile], 
+    [view_EStamp_log].[newProfile] AS [newProfile], 
+    [view_EStamp_log].[sysUserName] AS [sysUserName], 
+    [view_EStamp_log].[priceProfileChangeLogComment] AS [priceProfileChangeLogComment]
+    FROM [dbo].[view_EStamp_log] AS [view_EStamp_log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_EStamp_log_DisTinc_transID" EntityType="Self.view_EStamp_log_DisTinc_transID" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_EStamp_log_DisTinc_transID].[Last_priceProfileChangeLogID] AS [Last_priceProfileChangeLogID], 
+    [view_EStamp_log_DisTinc_transID].[transactionID] AS [transactionID], 
+    [view_EStamp_log_DisTinc_transID].[ticketNumber] AS [ticketNumber], 
+    [view_EStamp_log_DisTinc_transID].[carPlateNumber] AS [carPlateNumber], 
+    [view_EStamp_log_DisTinc_transID].[priceProfileChangeLogDateTime] AS [priceProfileChangeLogDateTime], 
+    [view_EStamp_log_DisTinc_transID].[priceProfileName] AS [priceProfileName], 
+    [view_EStamp_log_DisTinc_transID].[sysUserName] AS [sysUserName]
+    FROM [dbo].[view_EStamp_log_DisTinc_transID] AS [view_EStamp_log_DisTinc_transID]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_parkingAreaInfo" EntityType="Self.view_parkingAreaInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_parkingAreaInfo].[parkingAreaID] AS [parkingAreaID], 
+    [view_parkingAreaInfo].[parkingAreaName] AS [parkingAreaName], 
+    [view_parkingAreaInfo].[parkingAreaSlotAvaliable] AS [parkingAreaSlotAvaliable], 
+    [view_parkingAreaInfo].[count] AS [count], 
+    [view_parkingAreaInfo].[parkingAreaSlotRemain] AS [parkingAreaSlotRemain]
+    FROM [dbo].[view_parkingAreaInfo] AS [view_parkingAreaInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_priceProfile" EntityType="Self.view_priceProfile" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_priceProfile].[priceProfileID] AS [priceProfileID], 
+    [view_priceProfile].[priceProfileDayID] AS [priceProfileDayID], 
+    [view_priceProfile].[priceProfileName] AS [priceProfileName], 
+    [view_priceProfile].[priceProfileActive] AS [priceProfileActive], 
+    [view_priceProfile].[carTypeID] AS [carTypeID], 
+    [view_priceProfile].[priceProfileFlooringMode] AS [priceProfileFlooringMode], 
+    [view_priceProfile].[priceProfileLostCardFee] AS [priceProfileLostCardFee], 
+    [view_priceProfile].[priceProfileOverNightFee] AS [priceProfileOverNightFee], 
+    [view_priceProfile].[priceProfileMultiOverNightMode] AS [priceProfileMultiOverNightMode], 
+    [view_priceProfile].[ticketMemberTypeID] AS [ticketMemberTypeID], 
+    [view_priceProfile].[priceProfileTypeID] AS [priceProfileTypeID], 
+    [view_priceProfile].[priceProfileDayFreeTime] AS [priceProfileDayFreeTime], 
+    [view_priceProfile].[priceProfileDayServiceCharge] AS [priceProfileDayServiceCharge], 
+    [view_priceProfile].[priceProfileDayNumOfDay] AS [priceProfileDayNumOfDay], 
+    [view_priceProfile].[priceProfileHourID] AS [priceProfileHourID], 
+    [view_priceProfile].[priceProfileHourNo] AS [priceProfileHourNo], 
+    [view_priceProfile].[priceProfileHourRate] AS [priceProfileHourRate], 
+    [view_priceProfile].[priceProfileDiscountInCashier] AS [priceProfileDiscountInCashier], 
+    [view_priceProfile].[priceProfileColor] AS [priceProfileColor], 
+    [view_priceProfile].[priceProfileFlooringOffset] AS [priceProfileFlooringOffset]
+    FROM [dbo].[view_priceProfile] AS [view_priceProfile]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_ticketInfo" EntityType="Self.view_ticketInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_ticketInfo].[ticketID] AS [ticketID], 
+    [view_ticketInfo].[ticketMemberID] AS [ticketMemberID], 
+    [view_ticketInfo].[ticketNumber] AS [ticketNumber], 
+    [view_ticketInfo].[ticketMemberName] AS [ticketMemberName], 
+    [view_ticketInfo].[ticketTypeID] AS [ticketTypeID], 
+    [view_ticketInfo].[ticketTypeName] AS [ticketTypeName], 
+    [view_ticketInfo].[ticketStartDate] AS [ticketStartDate], 
+    [view_ticketInfo].[ticketExpiryDate] AS [ticketExpiryDate], 
+    [view_ticketInfo].[ticketActive] AS [ticketActive], 
+    [view_ticketInfo].[ticketRemainTimes] AS [ticketRemainTimes], 
+    [view_ticketInfo].[ticketCredit] AS [ticketCredit], 
+    [view_ticketInfo].[ticketDateUpdate] AS [ticketDateUpdate], 
+    [view_ticketInfo].[sysUserName] AS [sysUserName], 
+    [view_ticketInfo].[userID_Create] AS [userID_Create], 
+    [view_ticketInfo].[carPlateNumber] AS [carPlateNumber], 
+    [view_ticketInfo].[carBrandName] AS [carBrandName], 
+    [view_ticketInfo].[carTypeName] AS [carTypeName], 
+    [view_ticketInfo].[provinceName] AS [provinceName], 
+    [view_ticketInfo].[ticketMemberTypeName] AS [ticketMemberTypeName], 
+    [view_ticketInfo].[carModel] AS [carModel], 
+    [view_ticketInfo].[carColor] AS [carColor], 
+    [view_ticketInfo].[ticketMemberTel] AS [ticketMemberTel], 
+    [view_ticketInfo].[ticketMemberEmail] AS [ticketMemberEmail], 
+    [view_ticketInfo].[ticketMemberAddr] AS [ticketMemberAddr], 
+    [view_ticketInfo].[carID] AS [carID], 
+    [view_ticketInfo].[ticketRemainDay] AS [ticketRemainDay], 
+    [view_ticketInfo].[ticketRemainSecond] AS [ticketRemainSecond], 
+    [view_ticketInfo].[priceMonthlyID] AS [priceMonthlyID]
+    FROM [dbo].[view_ticketInfo] AS [view_ticketInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_transaction_all" EntityType="Self.view_transaction_all" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_transaction_all].[transactionID] AS [transactionID], 
+    [view_transaction_all].[transactionTypeName] AS [transactionTypeName], 
+    [view_transaction_all].[transactionChkIn] AS [transactionChkIn], 
+    [view_transaction_all].[transactionChkOut] AS [transactionChkOut], 
+    [view_transaction_all].[ticketNumber] AS [ticketNumber], 
+    [view_transaction_all].[gateIn] AS [gateIn], 
+    [view_transaction_all].[gateOut] AS [gateOut], 
+    [view_transaction_all].[sysUserIn] AS [sysUserIn], 
+    [view_transaction_all].[sysUserOut] AS [sysUserOut], 
+    [view_transaction_all].[carPlateNumber] AS [carPlateNumber], 
+    [view_transaction_all].[carPlateCity] AS [carPlateCity], 
+    [view_transaction_all].[transactionLastUpdate] AS [transactionLastUpdate], 
+    [view_transaction_all].[transactionComment] AS [transactionComment], 
+    [view_transaction_all].[priceProfileName] AS [priceProfileName], 
+    [view_transaction_all].[priceProfileColor] AS [priceProfileColor], 
+    [view_transaction_all].[transactionParkingTime] AS [transactionParkingTime]
+    FROM [dbo].[view_transaction_all] AS [view_transaction_all]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_transaction_all_parkingTime" EntityType="Self.view_transaction_all_parkingTime" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_transaction_all_parkingTime].[transactionID] AS [transactionID], 
+    [view_transaction_all_parkingTime].[transactionTypeName] AS [transactionTypeName], 
+    [view_transaction_all_parkingTime].[transactionChkIn] AS [transactionChkIn], 
+    [view_transaction_all_parkingTime].[transactionChkOut] AS [transactionChkOut], 
+    [view_transaction_all_parkingTime].[parkingTime] AS [parkingTime], 
+    [view_transaction_all_parkingTime].[ticketNumber] AS [ticketNumber], 
+    [view_transaction_all_parkingTime].[gateIn] AS [gateIn], 
+    [view_transaction_all_parkingTime].[gateOut] AS [gateOut], 
+    [view_transaction_all_parkingTime].[sysUserIn] AS [sysUserIn], 
+    [view_transaction_all_parkingTime].[sysUserOut] AS [sysUserOut], 
+    [view_transaction_all_parkingTime].[carPlateNumber] AS [carPlateNumber], 
+    [view_transaction_all_parkingTime].[carPlateCity] AS [carPlateCity], 
+    [view_transaction_all_parkingTime].[transactionLastUpdate] AS [transactionLastUpdate], 
+    [view_transaction_all_parkingTime].[transactionComment] AS [transactionComment], 
+    [view_transaction_all_parkingTime].[priceProfileName] AS [priceProfileName], 
+    [view_transaction_all_parkingTime].[transactionParkingTime] AS [transactionParkingTime]
+    FROM [dbo].[view_transaction_all_parkingTime] AS [view_transaction_all_parkingTime]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="view_VMS_log_stayTime" EntityType="Self.view_VMS_log_stayTime" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [view_VMS_log_stayTime].[logId] AS [logId], 
+    [view_VMS_log_stayTime].[visitorName] AS [visitorName], 
+    [view_VMS_log_stayTime].[visitorNote] AS [visitorNote], 
+    [view_VMS_log_stayTime].[visitorTel] AS [visitorTel], 
+    [view_VMS_log_stayTime].[visitorCarNumber] AS [visitorCarNumber], 
+    [view_VMS_log_stayTime].[visitorEmail] AS [visitorEmail], 
+    [view_VMS_log_stayTime].[visit_purpose] AS [visit_purpose], 
+    [view_VMS_log_stayTime].[visit_person_id] AS [visit_person_id], 
+    [view_VMS_log_stayTime].[visitorCompany] AS [visitorCompany], 
+    [view_VMS_log_stayTime].[visitorChkIn] AS [visitorChkIn], 
+    [view_VMS_log_stayTime].[visitorChkOut] AS [visitorChkOut], 
+    [view_VMS_log_stayTime].[tosee_name] AS [tosee_name], 
+    [view_VMS_log_stayTime].[tosee_addr] AS [tosee_addr], 
+    [view_VMS_log_stayTime].[ticketId] AS [ticketId], 
+    [view_VMS_log_stayTime].[visitorImg1] AS [visitorImg1], 
+    [view_VMS_log_stayTime].[visitorImg2] AS [visitorImg2], 
+    [view_VMS_log_stayTime].[visitorImg3] AS [visitorImg3], 
+    [view_VMS_log_stayTime].[visitorCardLocation] AS [visitorCardLocation], 
+    [view_VMS_log_stayTime].[visitArea] AS [visitArea], 
+    [view_VMS_log_stayTime].[lostCard] AS [lostCard], 
+    [view_VMS_log_stayTime].[MinuteDiff] AS [MinuteDiff]
+    FROM [dbo].[view_VMS_log_stayTime] AS [view_VMS_log_stayTime]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_accounting_accountingType" Association="Self.FK_accounting_accountingType">
+      <End Role="accountingType" EntitySet="accountingType" />
+      <End Role="accounting" EntitySet="accounting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_accounting_sysUser" Association="Self.FK_accounting_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="accounting" EntitySet="accounting" />
+    </AssociationSet>
+    <AssociationSet Name="fk_building_company_1" Association="Self.fk_building_company_1">
+      <End Role="sysOwnerCompany" EntitySet="sysOwnerCompany" />
+      <End Role="parkingArea" EntitySet="parkingArea" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_car_carBrand" Association="Self.FK_car_car_carBrand">
+      <End Role="car_carBrand" EntitySet="car_carBrand" />
+      <End Role="car" EntitySet="car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_car_carType" Association="Self.FK_car_car_carType">
+      <End Role="car_carType" EntitySet="car_carType" />
+      <End Role="car" EntitySet="car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_param_province" Association="Self.FK_car_param_province">
+      <End Role="param_province" EntitySet="param_province" />
+      <End Role="car" EntitySet="car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_gate-Match-reader_sys_reader" Association="Self.FK_sys_gate-Match-reader_sys_reader">
+      <End Role="sysReader" EntitySet="sysReader" />
+      <End Role="sys_gate-Match-reader" EntitySet="sys_gate-Match-reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_permis_control_sys_controllist" Association="Self.FK_sys_permis_control_sys_controllist">
+      <End Role="sysUserType" EntitySet="sysUserType" />
+      <End Role="sys_sysUserType_permission" EntitySet="sys_sysUserType_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_sysUserType_permission_sys_permission" Association="Self.FK_sys_sysUserType_permission_sys_permission">
+      <End Role="sys_permission" EntitySet="sys_permission" />
+      <End Role="sys_sysUserType_permission" EntitySet="sys_sysUserType_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysGate_parkingArea" Association="Self.FK_sysGate_parkingArea">
+      <End Role="parkingArea" EntitySet="parkingArea" />
+      <End Role="sysGate" EntitySet="sysGate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUser_sysOwnerCompany" Association="Self.FK_sysUser_sysOwnerCompany">
+      <End Role="sysOwnerCompany" EntitySet="sysOwnerCompany" />
+      <End Role="sysUser" EntitySet="sysUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUser_sysUserType" Association="Self.FK_sysUser_sysUserType">
+      <End Role="sysUserType" EntitySet="sysUserType" />
+      <End Role="sysUser" EntitySet="sysUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserLog_sysUser" Association="Self.FK_sysUserLog_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="sysUserLog" EntitySet="sysUserLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_accounting" Association="Self.FK_ticket_accounting">
+      <End Role="accounting" EntitySet="accounting" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_car" Association="Self.FK_ticket_car">
+      <End Role="car" EntitySet="car" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_sysUser" Association="Self.FK_ticket_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_ticketType" Association="Self.FK_ticket_ticketType">
+      <End Role="ticketType" EntitySet="ticketType" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_visitor" Association="Self.FK_ticket_visitor">
+      <End Role="ticketMember" EntitySet="ticketMember" />
+      <End Role="ticket" EntitySet="ticket" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticketMember_ticketMemberType" Association="Self.FK_ticketMember_ticketMemberType">
+      <End Role="ticketMemberType" EntitySet="ticketMemberType" />
+      <End Role="ticketMember" EntitySet="ticketMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_car_carType" Association="Self.FK_tran_priceProfile_car_carType">
+      <End Role="car_carType" EntitySet="car_carType" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_tran_PriceProfileType" Association="Self.FK_tran_priceProfile_tran_PriceProfileType">
+      <End Role="tran_priceProfileType" EntitySet="tran_priceProfileType" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_visitorType" Association="Self.FK_tran_priceProfile_visitorType">
+      <End Role="ticketMemberType" EntitySet="ticketMemberType" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_sysUser" Association="Self.FK_tran_priceProfileChangeLog_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_priceProfile" Association="Self.FK_tran_priceProfileChangeLog_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_priceProfile1" Association="Self.FK_tran_priceProfileChangeLog_tran_priceProfile1">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_transaction" Association="Self.FK_tran_priceProfileChangeLog_tran_transaction">
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileDay_tran_priceProfile" Association="Self.FK_tran_priceProfileDay_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileDay" EntitySet="tran_priceProfileDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileHour_tran_priceProfileDay" Association="Self.FK_tran_priceProfileHour_tran_priceProfileDay">
+      <End Role="tran_priceProfileDay" EntitySet="tran_priceProfileDay" />
+      <End Role="tran_priceProfileHour" EntitySet="tran_priceProfileHour" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_accounting" Association="Self.FK_tran_transaction_accounting">
+      <End Role="accounting" EntitySet="accounting" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysGate" Association="Self.FK_tran_transaction_sysGate">
+      <End Role="sysGate" EntitySet="sysGate" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysGate1" Association="Self.FK_tran_transaction_sysGate1">
+      <End Role="sysGate" EntitySet="sysGate" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysUser" Association="Self.FK_tran_transaction_sysUser">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysUser1" Association="Self.FK_tran_transaction_sysUser1">
+      <End Role="sysUser" EntitySet="sysUser" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_tran_priceProfile" Association="Self.FK_tran_transaction_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_tran_transactionType" Association="Self.FK_tran_transaction_tran_transactionType">
+      <End Role="tran_transactionType" EntitySet="tran_transactionType" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

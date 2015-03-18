@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88E44661-0499-4B56-93C2-E8BB0E9362E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BackOffice</RootNamespace>
+    <AssemblyName>BackOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\pawit.m\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FED9CFC1133A94AF22AB47E051895F113FF73C0C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>depositphotos_5033492-Parking-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>ExtendedCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.4.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\107-D-VMS\020 fix db connected\D-VMS\bin\Debug\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.4.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\107-D-VMS\020 fix db connected\D-VMS\bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.4.1, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\107-D-VMS\020 fix db connected\D-VMS\bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v13.2, Version=13.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\packages\EntityFramework.Extended.6.0.0.86\lib\net40\EntityFramework.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accounting.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="accountingType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="car.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="car_carBrand.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="car_carType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cbsysUserType.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DLSCalendar.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DLSHour.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dpark3.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dpark3.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dpark3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dpark3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dpark3.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="fmCheckAccountingAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmCheckAccountingAll.Designer.cs">
+      <DependentUpon>fmCheckAccountingAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmCheckCashierStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmCheckCashierStatic.Designer.cs">
+      <DependentUpon>fmCheckCashierStatic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmSysUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSysUser.designer.cs">
+      <DependentUpon>fmSysUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmTakePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmTakePayment.designer.cs">
+      <DependentUpon>fmTakePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmTicket2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmTicket2.Designer.cs">
+      <DependentUpon>fmTicket2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmTicketAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmTicketAddGroup.Designer.cs">
+      <DependentUpon>fmTicketAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myClass\AutoStart.cs" />
+    <Compile Include="param_blackListVehicle.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="param_holiday.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="param_province.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="param_systemLog.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="param_systemParam.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="parkingArea.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="parkingArea_reservParking.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="reportCashierLogout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportCashierLogout.Designer.cs">
+      <DependentUpon>reportCashierLogout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportChkIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportChkIn.Designer.cs">
+      <DependentUpon>reportChkIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmLogin.Designer.cs">
+      <DependentUpon>fmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmSystemParamConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmSystemParamConfig.Designer.cs">
+      <DependentUpon>fmSystemParamConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myClass\DBManage.cs" />
+    <Compile Include="fmDBConnectionConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDBConnectionConfig.Designer.cs">
+      <DependentUpon>fmDBConnectionConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmMainBackoffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMainBackoffice.Designer.cs">
+      <DependentUpon>fmMainBackoffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmControlList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmControlList.Designer.cs">
+      <DependentUpon>fmControlList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myClass\General.cs" />
+    <Compile Include="myClass\ScreenCapture.cs" />
+    <Compile Include="myClass\TextBoxBink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="myClass\TextBoxBink.Designer.cs">
+      <DependentUpon>TextBoxBink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myClass\Camera.cs" />
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="myClass\struct.cs" />
+    <Compile Include="reportReceipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportReceipt.Designer.cs">
+      <DependentUpon>reportReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportTakeTicketReceipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportTakeTicketReceipt.Designer.cs">
+      <DependentUpon>reportTakeTicketReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpTransactionMoreInfo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpTransactionMoreInfo.Designer.cs">
+      <DependentUpon>rpTransactionMoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stProDateOnMonth_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stProDate_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stProHourOnDate_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stProYear_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SumOfDateSery.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysGate.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysOwnerCompany.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysReader.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUser.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUserLog.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUserType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_gate_Match_reader.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_permission.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sys_sysUserType_permission.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticket.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticketMember.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticketMemberType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ticketType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpHourOnDateSery.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_emergencyType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceDialy.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceMonthly.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceProfile.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceProfileChangeLog.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceProfileDay.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceProfileHour.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_priceProfileType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_transaction.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_transaction2.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tran_transactionType.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_accounting_all_bydate_userID_accType_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_accounting_saleTicket_bydate_userID_accType_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_accounting_with_numperson_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_report_cashier_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_report_cashier_sum_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_ticket_moreInfo_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_ticket_paymentHistory_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_allTime_byCarPlateNumber_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_allTime_bydate_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_Emergency_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_ForceChkOut_byCarPlateNumber_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_InParking_byCarPlateNumber_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_InParking_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_IsLostCard_byCarPlateNumber_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_moreInfo_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tr_transaction_Stamp_Log_Result.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_accessright.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_accountingWithNumPerson.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_accounting_all.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Emergency_ALL.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_EStamp_log.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_EStamp_log_DisTinc_transID.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_parkingAreaInfo.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_priceProfile.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_ticketInfo.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_transaction_all.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_transaction_all_parkingTime.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_VMS_log_stayTime.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VMS_LOG.cs">
+      <DependentUpon>Dpark3.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fmCheckAccountingAll.resx">
+      <DependentUpon>fmCheckAccountingAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmCheckCashierStatic.resx">
+      <DependentUpon>fmCheckCashierStatic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSysUser.resx">
+      <DependentUpon>fmSysUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTakePayment.resx">
+      <DependentUpon>fmTakePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTicket2.resx">
+      <DependentUpon>fmTicket2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTicketAddGroup.resx">
+      <DependentUpon>fmTicketAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportCashierLogout.resx">
+      <DependentUpon>reportCashierLogout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportChkIn.resx">
+      <DependentUpon>reportChkIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDBConnectionConfig.resx">
+      <DependentUpon>fmDBConnectionConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmLogin.resx">
+      <DependentUpon>fmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMainBackoffice.resx">
+      <DependentUpon>fmMainBackoffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmControlList.resx">
+      <DependentUpon>fmControlList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmSystemParamConfig.resx">
+      <DependentUpon>fmSystemParamConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myClass\TextBoxBink.resx">
+      <DependentUpon>TextBoxBink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportReceipt.resx">
+      <DependentUpon>reportReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportTakeTicketReceipt.resx">
+      <DependentUpon>reportTakeTicketReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpTransactionMoreInfo.resx">
+      <DependentUpon>rpTransactionMoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EntityDeploy Include="Dpark3.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dpark3.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Dpark3.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dpark3.edmx</DependentUpon>
+      <LastGenOutput>Dpark3.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Dpark3.edmx.diagram">
+      <DependentUpon>Dpark3.edmx</DependentUpon>
+    </None>
+    <None Include="Dpark3.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Dpark3.edmx</DependentUpon>
+      <LastGenOutput>Dpark3.cs</LastGenOutput>
+    </None>
+    <None Include="myClass\DBManage.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\General.reportTransactionMoreInfo.datasource" />
+    <None Include="Properties\DataSources\System.Drawing.Image.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entryout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-3_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transmit_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-up-2_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barier_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emergency22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coupon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aar22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cards22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rateinfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\couponPrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tax22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building2224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alockx22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memcard22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gate22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\readerx22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userx22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permisgroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visitortype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vihicletype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\state22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Album_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterSample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mirage-Pickup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallsearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars2212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dis32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halfstar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blankstar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nonito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carIn3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mark_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdollar32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1351994560_People-MSN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database-Active-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="barier_static.ico" />
+    <Content Include="depositphotos_5033492-Parking-icon.ico" />
+    <None Include="Resources\removeTicket.png" />
+    <None Include="Resources\new-file-icon2.png" />
+    <None Include="Resources\depositphotos_5033492-Parking-icon1.png" />
+    <None Include="Resources\Preppy-icon1.png" />
+    <None Include="Resources\exit2.png" />
+    <None Include="Resources\depositphotos_5033492-Parking-icon.png" />
+    <None Include="Resources\memcard24.png" />
+    <None Include="Resources\memcard25.png" />
+    <None Include="Resources\memcard23.png" />
+    <None Include="Resources\Search321.png" />
+    <None Include="Resources\Search32.png" />
+    <None Include="Resources\Monitor-icon.png" />
+    <None Include="Resources\10-ธ-ค--2013 1-14-43.jpg" />
+    <None Include="Resources\Apps-Visual-Studio-Metro-icon.png" />
+    <None Include="Resources\remove-ticket-1-icon.png" />
+    <None Include="Resources\ticket-1-icon.png" />
+    <None Include="Resources\Preppy-icon.png" />
+    <None Include="Resources\Default.png" />
+    <None Include="Resources\1385302457Upload32x32.png" />
+    <None Include="Resources\deploy1.png" />
+    <None Include="Resources\deploy.png" />
+    <None Include="Resources\icon-manage-locally-deploy-everywhere.jpg" />
+    <None Include="Resources\1385204059_application.png" />
+    <None Include="Resources\view-refresh32.png" />
+    <None Include="Resources\B1000.jpg" />
+    <None Include="Resources\B500.jpg" />
+    <None Include="Resources\B100.jpg" />
+    <None Include="Resources\B50.jpg" />
+    <None Include="Resources\B20.jpg" />
+    <None Include="Resources\logo_excel-48-48.png" />
+    <None Include="Resources\excel-icon.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\receipt.png" />
+    <None Include="Resources\database22 %281%29.png" />
+    <None Include="Resources\1351994560_People-MSN1.png" />
+    <None Include="Resources\dollars.png" />
+    <None Include="Resources\money %281%29.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\120px-Crystal_128_reload1.png" />
+    <None Include="Resources\120px-Crystal_128_reload.png" />
+    <None Include="Resources\down3load.png" />
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

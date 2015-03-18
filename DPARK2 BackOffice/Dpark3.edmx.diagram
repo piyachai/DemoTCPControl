@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="de4e3f86cbf444dfadeada2fb5cd9d0d" Name="Diagram1">
+        <EntityTypeShape EntityType="Dpark3Model.accounting" Width="1.5" PointX="8.25" PointY="9.875" />
+        <EntityTypeShape EntityType="Dpark3Model.accountingType" Width="1.5" PointX="6" PointY="6.125" />
+        <EntityTypeShape EntityType="Dpark3Model.car" Width="1.5" PointX="8.25" PointY="22.125" />
+        <EntityTypeShape EntityType="Dpark3Model.car_carBrand" Width="1.5" PointX="6" PointY="23" />
+        <EntityTypeShape EntityType="Dpark3Model.car_carType" Width="1.5" PointX="6" PointY="20.125" />
+        <EntityTypeShape EntityType="Dpark3Model.DLSHour" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="Dpark3Model.param_blackListVehicle" Width="1.5" PointX="5.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Dpark3Model.param_holiday" Width="1.5" PointX="13.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Dpark3Model.param_province" Width="1.5" PointX="6" PointY="25.625" />
+        <EntityTypeShape EntityType="Dpark3Model.param_systemLog" Width="1.5" PointX="0.75" PointY="14.875" />
+        <EntityTypeShape EntityType="Dpark3Model.param_systemParam" Width="1.5" PointX="2.75" PointY="14.875" />
+        <EntityTypeShape EntityType="Dpark3Model.parkingArea" Width="1.5" PointX="9" PointY="0.75" />
+        <EntityTypeShape EntityType="Dpark3Model.parkingArea_reservParking" Width="1.5" PointX="13.75" PointY="4.875" />
+        <EntityTypeShape EntityType="Dpark3Model.sys_gate_Match_reader" Width="1.5" PointX="3" PointY="2" />
+        <EntityTypeShape EntityType="Dpark3Model.sys_permission" Width="1.5" PointX="0.75" PointY="8.25" />
+        <EntityTypeShape EntityType="Dpark3Model.sys_sysUserType_permission" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="Dpark3Model.sysdiagram" Width="1.5" PointX="4.75" PointY="15.875" />
+        <EntityTypeShape EntityType="Dpark3Model.sysGate" Width="1.5" PointX="11.25" PointY="1.625" />
+        <EntityTypeShape EntityType="Dpark3Model.sysOwnerCompany" Width="1.5" PointX="3.75" PointY="6.625" />
+        <EntityTypeShape EntityType="Dpark3Model.sysReader" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="Dpark3Model.sysUser" Width="1.5" PointX="6" PointY="9.625" />
+        <EntityTypeShape EntityType="Dpark3Model.sysUserLog" Width="1.5" PointX="8.25" PointY="16" />
+        <EntityTypeShape EntityType="Dpark3Model.sysUserType" Width="1.5" PointX="0.75" PointY="11" />
+        <EntityTypeShape EntityType="Dpark3Model.ticket" Width="1.5" PointX="10.5" PointY="9.625" />
+        <EntityTypeShape EntityType="Dpark3Model.ticketMember" Width="1.5" PointX="8.25" PointY="27.875" />
+        <EntityTypeShape EntityType="Dpark3Model.ticketMemberType" Width="1.5" PointX="6" PointY="28.25" />
+        <EntityTypeShape EntityType="Dpark3Model.ticketType" Width="1.5" PointX="8.25" PointY="5.375" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_emergencyType" Width="1.5" PointX="10.75" PointY="15.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceDialy" Width="1.5" PointX="15.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceProfile" Width="1.5" PointX="11.25" PointY="31.625" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceProfileChangeLog" Width="1.5" PointX="15.75" PointY="10.5" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceProfileDay" Width="1.5" PointX="13.5" PointY="32.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceProfileHour" Width="1.5" PointX="15.75" PointY="33.125" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceProfileType" Width="1.5" PointX="9" PointY="33.25" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_transaction" Width="1.5" PointX="13.5" PointY="8.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_transaction2" Width="1.5" PointX="15.75" PointY="4.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_transactionType" Width="1.5" PointX="11.25" PointY="6.25" />
+        <EntityTypeShape EntityType="Dpark3Model.VMS_LOG" Width="1.5" PointX="12.75" PointY="16.875" />
+        <EntityTypeShape EntityType="Dpark3Model.DLSCalendar" Width="1.5" PointX="15.75" PointY="14.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tran_priceMonthly" Width="1.5" PointX="15.75" PointY="7.875" />
+        <EntityTypeShape EntityType="Dpark3Model.SumOfDateSery" Width="1.5" PointX="0.75" PointY="17.875" />
+        <EntityTypeShape EntityType="Dpark3Model.tmpHourOnDateSery" Width="1.5" PointX="17.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_accessright" Width="1.5" PointX="2.75" PointY="18.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_accounting_all" Width="1.5" PointX="17.75" PointY="4.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_accountingWithNumPerson" Width="1.5" PointX="17.75" PointY="9.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_Emergency_ALL" Width="1.5" PointX="17.75" PointY="14.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_EStamp_log" Width="1.5" PointX="14.75" PointY="18.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_EStamp_log_DisTinc_transID" Width="1.5" PointX="16.75" PointY="18.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_parkingAreaInfo" Width="1.5" PointX="18.75" PointY="18.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_priceProfile" Width="1.5" PointX="19.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_ticketInfo" Width="1.5" PointX="19.75" PointY="7.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_transaction_all" Width="1.5" PointX="20.75" PointY="15.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_transaction_all_parkingTime" Width="1.5" PointX="18.75" PointY="21.875" />
+        <EntityTypeShape EntityType="Dpark3Model.view_VMS_log_stayTime" Width="1.5" PointX="20.75" PointY="20.875" />
+        <AssociationConnector Association="Dpark3Model.FK_accounting_accountingType" />
+        <AssociationConnector Association="Dpark3Model.FK_accounting_sysUser" />
+        <AssociationConnector Association="Dpark3Model.FK_ticket_accounting" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_accounting" />
+        <AssociationConnector Association="Dpark3Model.FK_car_car_carBrand" />
+        <AssociationConnector Association="Dpark3Model.FK_car_car_carType" />
+        <AssociationConnector Association="Dpark3Model.FK_car_param_province" />
+        <AssociationConnector Association="Dpark3Model.FK_ticket_car" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfile_car_carType" />
+        <AssociationConnector Association="Dpark3Model.fk_building_company_1" />
+        <AssociationConnector Association="Dpark3Model.FK_sysGate_parkingArea" />
+        <AssociationConnector Association="Dpark3Model.FK_sys_gate_Match_reader_sys_reader" />
+        <AssociationConnector Association="Dpark3Model.FK_sys_sysUserType_permission_sys_permission" />
+        <AssociationConnector Association="Dpark3Model.FK_sys_permis_control_sys_controllist" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_sysGate" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_sysGate1" />
+        <AssociationConnector Association="Dpark3Model.FK_sysUser_sysOwnerCompany" />
+        <AssociationConnector Association="Dpark3Model.FK_sysUser_sysUserType" />
+        <AssociationConnector Association="Dpark3Model.FK_sysUserLog_sysUser" />
+        <AssociationConnector Association="Dpark3Model.FK_ticket_sysUser" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileChangeLog_sysUser" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_sysUser" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_sysUser1" />
+        <AssociationConnector Association="Dpark3Model.FK_ticket_ticketType" />
+        <AssociationConnector Association="Dpark3Model.FK_ticket_visitor" />
+        <AssociationConnector Association="Dpark3Model.FK_ticketMember_ticketMemberType" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfile_visitorType" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfile_tran_PriceProfileType" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileChangeLog_tran_priceProfile" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileChangeLog_tran_priceProfile1" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileDay_tran_priceProfile" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_tran_priceProfile" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileChangeLog_tran_transaction" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_priceProfileHour_tran_priceProfileDay" />
+        <AssociationConnector Association="Dpark3Model.FK_tran_transaction_tran_transactionType" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

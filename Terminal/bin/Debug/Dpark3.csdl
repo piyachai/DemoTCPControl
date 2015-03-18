@@ -1,0 +1,1705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Dpark3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="accounting">
+    <Key>
+      <PropertyRef Name="accountingID" />
+    </Key>
+    <Property Name="accountingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="accountingPrices" Type="Double" Nullable="false" />
+    <Property Name="accountingDiscount" Type="Double" Nullable="false" />
+    <Property Name="accountingReceive" Type="Double" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="accountingDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="accountingTypeID" Type="Int32" Nullable="false" />
+    <Property Name="accountingComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketID" Type="Int32" />
+    <NavigationProperty Name="accountingType" Relationship="Self.FK_accounting_accountingType" FromRole="accounting" ToRole="accountingType" />
+    <NavigationProperty Name="sysUser" Relationship="Self.FK_accounting_sysUser" FromRole="accounting" ToRole="sysUser" />
+    <NavigationProperty Name="tickets" Relationship="Self.FK_ticket_accounting" FromRole="accounting" ToRole="ticket" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_transaction_accounting" FromRole="accounting" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="accountingType">
+    <Key>
+      <PropertyRef Name="accountingTypeID" />
+    </Key>
+    <Property Name="accountingTypeID" Type="Int32" Nullable="false" />
+    <Property Name="accountingTypeCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="accountingTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="accountings" Relationship="Self.FK_accounting_accountingType" FromRole="accountingType" ToRole="accounting" />
+  </EntityType>
+  <EntityType Name="car">
+    <Key>
+      <PropertyRef Name="carID" />
+    </Key>
+    <Property Name="carID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="carTypeID" Type="Int32" />
+    <Property Name="carModel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProvinceID" Type="Int32" />
+    <Property Name="carBrandID" Type="Int32" />
+    <NavigationProperty Name="car_carBrand" Relationship="Self.FK_car_car_carBrand" FromRole="car" ToRole="car_carBrand" />
+    <NavigationProperty Name="car_carType" Relationship="Self.FK_car_car_carType" FromRole="car" ToRole="car_carType" />
+    <NavigationProperty Name="param_province" Relationship="Self.FK_car_param_province" FromRole="car" ToRole="param_province" />
+    <NavigationProperty Name="tickets" Relationship="Self.FK_ticket_car" FromRole="car" ToRole="ticket" />
+  </EntityType>
+  <EntityType Name="car_carBrand">
+    <Key>
+      <PropertyRef Name="carBrandID" />
+    </Key>
+    <Property Name="carBrandID" Type="Int32" Nullable="false" />
+    <Property Name="carBrandName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carBrandOrderIndex" Type="Int32" />
+    <NavigationProperty Name="cars" Relationship="Self.FK_car_car_carBrand" FromRole="car_carBrand" ToRole="car" />
+  </EntityType>
+  <EntityType Name="car_carType">
+    <Key>
+      <PropertyRef Name="carTypeID" />
+    </Key>
+    <Property Name="carTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="carTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="carTypeComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carTypeActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="cars" Relationship="Self.FK_car_car_carType" FromRole="car_carType" ToRole="car" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_priceProfile_car_carType" FromRole="car_carType" ToRole="tran_priceProfile" />
+  </EntityType>
+  <EntityType Name="DLSHour">
+    <Key>
+      <PropertyRef Name="hour_id" />
+    </Key>
+    <Property Name="hour_id" Type="Int32" Nullable="false" />
+    <Property Name="hh_mm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="param_blackListVehicle">
+    <Key>
+      <PropertyRef Name="blacklistID" />
+    </Key>
+    <Property Name="blacklistID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="plateNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="blacklistUpdate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="param_holiday">
+    <Key>
+      <PropertyRef Name="holidayId" />
+    </Key>
+    <Property Name="holidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="param_province">
+    <Key>
+      <PropertyRef Name="provinceID" />
+    </Key>
+    <Property Name="provinceID" Type="Int32" Nullable="false" />
+    <Property Name="provinceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="cars" Relationship="Self.FK_car_param_province" FromRole="param_province" ToRole="car" />
+  </EntityType>
+  <EntityType Name="param_systemLog">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logType" Type="Int32" Nullable="false" />
+    <Property Name="logDes" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="logTime" Type="DateTime" Nullable="false" Precision="7" />
+  </EntityType>
+  <EntityType Name="param_systemParam">
+    <Key>
+      <PropertyRef Name="systemParamID" />
+    </Key>
+    <Property Name="systemParamID" Type="Int32" Nullable="false" />
+    <Property Name="systemParamKey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="systemParamValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="parkingArea">
+    <Key>
+      <PropertyRef Name="parkingAreaID" />
+    </Key>
+    <Property Name="parkingAreaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="parkingAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parkingAreaSlotAvaliable" Type="Int32" Nullable="false" />
+    <Property Name="parkingAreaActive" Type="Boolean" Nullable="false" />
+    <Property Name="parkingAreaOpenTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="parkingAreaCloseTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="parkingAreaComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OnwerCompanyID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="sysOwnerCompany" Relationship="Self.fk_building_company_1" FromRole="parkingArea" ToRole="sysOwnerCompany" />
+    <NavigationProperty Name="sysGates" Relationship="Self.FK_sysGate_parkingArea" FromRole="parkingArea" ToRole="sysGate" />
+  </EntityType>
+  <EntityType Name="parkingArea_reservParking">
+    <Key>
+      <PropertyRef Name="reservParkingID" />
+    </Key>
+    <Property Name="reservParkingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ticketID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="reservParkingSlotID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="sys_gate_Match_reader">
+    <Key>
+      <PropertyRef Name="gatelMatchReaderID" />
+    </Key>
+    <Property Name="gatelMatchReaderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gateID" Type="Int32" />
+    <Property Name="readerID" Type="Int32" />
+    <NavigationProperty Name="sysReader" Relationship="Self.FK_sys_gate_Match_reader_sys_reader" FromRole="sys_gate_Match_reader" ToRole="sysReader" />
+  </EntityType>
+  <EntityType Name="sys_permission">
+    <Key>
+      <PropertyRef Name="permissionID" />
+    </Key>
+    <Property Name="permissionID" Type="Int32" Nullable="false" />
+    <Property Name="permissionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="sys_sysUserType_permission" Relationship="Self.FK_sys_sysUserType_permission_sys_permission" FromRole="sys_permission" ToRole="sys_sysUserType_permission" />
+  </EntityType>
+  <EntityType Name="sys_sysUserType_permission">
+    <Key>
+      <PropertyRef Name="sysUserTypePermissionID" />
+    </Key>
+    <Property Name="sysUserTypePermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sysUserTypeID" Type="Int32" Nullable="false" />
+    <Property Name="permissionID" Type="Int32" Nullable="false" />
+    <Property Name="sysUserTypePermissionNew" Type="Boolean" Nullable="false" />
+    <Property Name="sysUserTypePermissionRead" Type="Boolean" Nullable="false" />
+    <Property Name="sysUserTypePermissionDel" Type="Boolean" Nullable="false" />
+    <Property Name="sysUserTypePermissionEdit" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="sys_permission" Relationship="Self.FK_sys_sysUserType_permission_sys_permission" FromRole="sys_sysUserType_permission" ToRole="sys_permission" />
+    <NavigationProperty Name="sysUserType" Relationship="Self.FK_sys_permis_control_sys_controllist" FromRole="sys_sysUserType_permission" ToRole="sysUserType" />
+  </EntityType>
+  <EntityType Name="sysGate">
+    <Key>
+      <PropertyRef Name="gateID" />
+    </Key>
+    <Property Name="gateID" Type="Int32" Nullable="false" />
+    <Property Name="gateName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gateLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gateDirection" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parkingAreaID" Type="Int32" Nullable="false" />
+    <Property Name="gateIsAutoType" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="parkingArea" Relationship="Self.FK_sysGate_parkingArea" FromRole="sysGate" ToRole="parkingArea" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_transaction_sysGate" FromRole="sysGate" ToRole="tran_transaction" />
+    <NavigationProperty Name="tran_transaction1" Relationship="Self.FK_tran_transaction_sysGate1" FromRole="sysGate" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="sysOwnerCompany">
+    <Key>
+      <PropertyRef Name="ownerCompanyID" />
+    </Key>
+    <Property Name="ownerCompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ownerCompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ownerCompanyCodeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ownerCompanyActive" Type="Boolean" Nullable="false" />
+    <Property Name="ownerCompanyAddr" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="ownerCompanyTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ownerCompanyEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ownerCompanyFax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="parkingAreas" Relationship="Self.fk_building_company_1" FromRole="sysOwnerCompany" ToRole="parkingArea" />
+    <NavigationProperty Name="sysUsers" Relationship="Self.FK_sysUser_sysOwnerCompany" FromRole="sysOwnerCompany" ToRole="sysUser" />
+  </EntityType>
+  <EntityType Name="sysReader">
+    <Key>
+      <PropertyRef Name="readerID" />
+    </Key>
+    <Property Name="readerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="readerType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="readerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="sys_gate_Match_reader" Relationship="Self.FK_sys_gate_Match_reader_sys_reader" FromRole="sysReader" ToRole="sys_gate_Match_reader" />
+  </EntityType>
+  <EntityType Name="sysUser">
+    <Key>
+      <PropertyRef Name="sysUserID" />
+    </Key>
+    <Property Name="sysUserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sysUserLoginName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserTel" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserPhone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserAddr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sysUserActive" Type="Boolean" Nullable="false" />
+    <Property Name="OwnerCompanyID" Type="Int32" />
+    <Property Name="sysUserTypeID" Type="Int32" />
+    <NavigationProperty Name="accountings" Relationship="Self.FK_accounting_sysUser" FromRole="sysUser" ToRole="accounting" />
+    <NavigationProperty Name="sysOwnerCompany" Relationship="Self.FK_sysUser_sysOwnerCompany" FromRole="sysUser" ToRole="sysOwnerCompany" />
+    <NavigationProperty Name="sysUserLogs" Relationship="Self.FK_sysUserLog_sysUser" FromRole="sysUser" ToRole="sysUserLog" />
+    <NavigationProperty Name="tickets" Relationship="Self.FK_ticket_sysUser" FromRole="sysUser" ToRole="ticket" />
+    <NavigationProperty Name="tran_priceProfileChangeLog" Relationship="Self.FK_tran_priceProfileChangeLog_sysUser" FromRole="sysUser" ToRole="tran_priceProfileChangeLog" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_transaction_sysUser" FromRole="sysUser" ToRole="tran_transaction" />
+    <NavigationProperty Name="tran_transaction1" Relationship="Self.FK_tran_transaction_sysUser1" FromRole="sysUser" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="sysUserLog">
+    <Key>
+      <PropertyRef Name="sysUserLogID" />
+    </Key>
+    <Property Name="sysUserLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sysUserID" Type="Int32" Nullable="false" />
+    <Property Name="sysUserLogType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserLogTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sysUserLogMachineName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="sysUser" Relationship="Self.FK_sysUserLog_sysUser" FromRole="sysUserLog" ToRole="sysUser" />
+  </EntityType>
+  <EntityType Name="sysUserType">
+    <Key>
+      <PropertyRef Name="sysUserTypeID" />
+    </Key>
+    <Property Name="sysUserTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sysUserTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserTypeDes" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserTypeComment" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="sys_sysUserType_permission" Relationship="Self.FK_sys_permis_control_sys_controllist" FromRole="sysUserType" ToRole="sys_sysUserType_permission" />
+  </EntityType>
+  <EntityType Name="ticket">
+    <Key>
+      <PropertyRef Name="ticketID" />
+    </Key>
+    <Property Name="ticketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ticketTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ticketMemberID" Type="Int32" />
+    <Property Name="ticketStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ticketExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ticketRemainDay" Type="String" MaxLength="14" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ticketRemainSecond" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ticketActive" Type="Boolean" Nullable="false" />
+    <Property Name="ticketRemainTimes" Type="Int32" Nullable="false" />
+    <Property Name="ticketCredit" Type="Double" Nullable="false" />
+    <Property Name="userID_Create" Type="Int32" Nullable="false" />
+    <Property Name="ticketDateUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="carID" Type="Int32" />
+    <Property Name="priceMonthlyID" Type="Int32" />
+    <NavigationProperty Name="accounting" Relationship="Self.FK_ticket_accounting" FromRole="ticket" ToRole="accounting" />
+    <NavigationProperty Name="car" Relationship="Self.FK_ticket_car" FromRole="ticket" ToRole="car" />
+    <NavigationProperty Name="sysUser" Relationship="Self.FK_ticket_sysUser" FromRole="ticket" ToRole="sysUser" />
+    <NavigationProperty Name="ticketType" Relationship="Self.FK_ticket_ticketType" FromRole="ticket" ToRole="ticketType" />
+    <NavigationProperty Name="ticketMember" Relationship="Self.FK_ticket_visitor" FromRole="ticket" ToRole="ticketMember" />
+  </EntityType>
+  <EntityType Name="ticketMember">
+    <Key>
+      <PropertyRef Name="ticketMemberID" />
+    </Key>
+    <Property Name="ticketMemberID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ticketMemberName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ticketMemberTel" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberAddr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberEmail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberActive" Type="Boolean" Nullable="false" />
+    <Property Name="ticketMemberTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tickets" Relationship="Self.FK_ticket_visitor" FromRole="ticketMember" ToRole="ticket" />
+    <NavigationProperty Name="ticketMemberType" Relationship="Self.FK_ticketMember_ticketMemberType" FromRole="ticketMember" ToRole="ticketMemberType" />
+  </EntityType>
+  <EntityType Name="ticketMemberType">
+    <Key>
+      <PropertyRef Name="ticketMemberTypeID" />
+    </Key>
+    <Property Name="ticketMemberTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ticketMemberTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ticketMemberTypeComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberTypeActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ticketMembers" Relationship="Self.FK_ticketMember_ticketMemberType" FromRole="ticketMemberType" ToRole="ticketMember" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_priceProfile_visitorType" FromRole="ticketMemberType" ToRole="tran_priceProfile" />
+  </EntityType>
+  <EntityType Name="ticketType">
+    <Key>
+      <PropertyRef Name="ticketTypeId" />
+    </Key>
+    <Property Name="ticketTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ticketTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ticketTypeDes" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketTypePolicy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tickets" Relationship="Self.FK_ticket_ticketType" FromRole="ticketType" ToRole="ticket" />
+  </EntityType>
+  <EntityType Name="tran_emergencyType">
+    <Key>
+      <PropertyRef Name="emergencyTypeID" />
+    </Key>
+    <Property Name="emergencyTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emergencyTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsGateInUsed" Type="Boolean" Nullable="false" />
+    <Property Name="IsGateOutUsed" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tran_priceDialy">
+    <Key>
+      <PropertyRef Name="priceDialyID" />
+    </Key>
+    <Property Name="priceDialyID" Type="Int32" Nullable="false" />
+    <Property Name="priceDialyRate" Type="Double" Nullable="false" />
+    <Property Name="priceDayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tran_priceProfile">
+    <Key>
+      <PropertyRef Name="priceProfileID" />
+    </Key>
+    <Property Name="priceProfileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="priceProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="priceProfileActive" Type="Boolean" Nullable="false" />
+    <Property Name="carTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileFlooringMode" Type="Boolean" Nullable="false" />
+    <Property Name="priceProfileLostCardFee" Type="Double" Nullable="false" />
+    <Property Name="ticketMemberTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileOverNightFee" Type="Double" Nullable="false" />
+    <Property Name="priceProfileMultiOverNightMode" Type="Int32" />
+    <Property Name="priceProfileTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDiscountInCashier" Type="Boolean" Nullable="false" />
+    <Property Name="priceProfileColor" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileFlooringOffset" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="car_carType" Relationship="Self.FK_tran_priceProfile_car_carType" FromRole="tran_priceProfile" ToRole="car_carType" />
+    <NavigationProperty Name="ticketMemberType" Relationship="Self.FK_tran_priceProfile_visitorType" FromRole="tran_priceProfile" ToRole="ticketMemberType" />
+    <NavigationProperty Name="tran_priceProfileType" Relationship="Self.FK_tran_priceProfile_tran_PriceProfileType" FromRole="tran_priceProfile" ToRole="tran_priceProfileType" />
+    <NavigationProperty Name="tran_priceProfileChangeLog" Relationship="Self.FK_tran_priceProfileChangeLog_tran_priceProfile" FromRole="tran_priceProfile" ToRole="tran_priceProfileChangeLog" />
+    <NavigationProperty Name="tran_priceProfileChangeLog1" Relationship="Self.FK_tran_priceProfileChangeLog_tran_priceProfile1" FromRole="tran_priceProfile" ToRole="tran_priceProfileChangeLog" />
+    <NavigationProperty Name="tran_priceProfileDay" Relationship="Self.FK_tran_priceProfileDay_tran_priceProfile" FromRole="tran_priceProfile" ToRole="tran_priceProfileDay" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_transaction_tran_priceProfile" FromRole="tran_priceProfile" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileChangeLog">
+    <Key>
+      <PropertyRef Name="priceProfileChangeLogID" />
+    </Key>
+    <Property Name="priceProfileChangeLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="priceProfileOldID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileNewID" Type="Int32" Nullable="false" />
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="sysUserID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileChangeLogDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="priceProfileChangeLogComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="sysUser" Relationship="Self.FK_tran_priceProfileChangeLog_sysUser" FromRole="tran_priceProfileChangeLog" ToRole="sysUser" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_priceProfileChangeLog_tran_priceProfile" FromRole="tran_priceProfileChangeLog" ToRole="tran_priceProfile" />
+    <NavigationProperty Name="tran_priceProfile1" Relationship="Self.FK_tran_priceProfileChangeLog_tran_priceProfile1" FromRole="tran_priceProfileChangeLog" ToRole="tran_priceProfile" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_priceProfileChangeLog_tran_transaction" FromRole="tran_priceProfileChangeLog" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileDay">
+    <Key>
+      <PropertyRef Name="priceProfileDayID" />
+    </Key>
+    <Property Name="priceProfileDayID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="priceProfileDayNumOfDay" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDayFreeTime" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDayServiceCharge" Type="Double" Nullable="false" />
+    <Property Name="priceProfileID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_priceProfileDay_tran_priceProfile" FromRole="tran_priceProfileDay" ToRole="tran_priceProfile" />
+    <NavigationProperty Name="tran_priceProfileHour" Relationship="Self.FK_tran_priceProfileHour_tran_priceProfileDay" FromRole="tran_priceProfileDay" ToRole="tran_priceProfileHour" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileHour">
+    <Key>
+      <PropertyRef Name="priceProfileHourID" />
+    </Key>
+    <Property Name="priceProfileHourID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="priceProfileHourNo" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileHourRate" Type="Double" Nullable="false" />
+    <Property Name="priceProfileDayID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tran_priceProfileDay" Relationship="Self.FK_tran_priceProfileHour_tran_priceProfileDay" FromRole="tran_priceProfileHour" ToRole="tran_priceProfileDay" />
+  </EntityType>
+  <EntityType Name="tran_priceProfileType">
+    <Key>
+      <PropertyRef Name="priceProfileTypeID" />
+    </Key>
+    <Property Name="priceProfileTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_priceProfile_tran_PriceProfileType" FromRole="tran_priceProfileType" ToRole="tran_priceProfile" />
+  </EntityType>
+  <EntityType Name="tran_transaction">
+    <Key>
+      <PropertyRef Name="transactionID" />
+    </Key>
+    <Property Name="transactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="transactionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="transactionChkIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionChkOut" Type="DateTime" Precision="3" />
+    <Property Name="transactionParkingTime" Type="String" MaxLength="12" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="sysUserID_ChkIn" Type="Int32" Nullable="false" />
+    <Property Name="sysUserID_ChkOut" Type="Int32" />
+    <Property Name="gateID_IN" Type="Int32" Nullable="false" />
+    <Property Name="gateID_OUT" Type="Int32" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateCity" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileID" Type="Int32" />
+    <Property Name="transactionLastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="accountingID" Type="Int32" />
+    <Property Name="transactionComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="transactionIsLostCard" Type="Boolean" />
+    <NavigationProperty Name="accounting" Relationship="Self.FK_tran_transaction_accounting" FromRole="tran_transaction" ToRole="accounting" />
+    <NavigationProperty Name="sysGate" Relationship="Self.FK_tran_transaction_sysGate" FromRole="tran_transaction" ToRole="sysGate" />
+    <NavigationProperty Name="sysGate1" Relationship="Self.FK_tran_transaction_sysGate1" FromRole="tran_transaction" ToRole="sysGate" />
+    <NavigationProperty Name="sysUser" Relationship="Self.FK_tran_transaction_sysUser" FromRole="tran_transaction" ToRole="sysUser" />
+    <NavigationProperty Name="sysUser1" Relationship="Self.FK_tran_transaction_sysUser1" FromRole="tran_transaction" ToRole="sysUser" />
+    <NavigationProperty Name="tran_priceProfile" Relationship="Self.FK_tran_transaction_tran_priceProfile" FromRole="tran_transaction" ToRole="tran_priceProfile" />
+    <NavigationProperty Name="tran_priceProfileChangeLog" Relationship="Self.FK_tran_priceProfileChangeLog_tran_transaction" FromRole="tran_transaction" ToRole="tran_priceProfileChangeLog" />
+    <NavigationProperty Name="tran_transactionType" Relationship="Self.FK_tran_transaction_tran_transactionType" FromRole="tran_transaction" ToRole="tran_transactionType" />
+  </EntityType>
+  <EntityType Name="tran_transactionType">
+    <Key>
+      <PropertyRef Name="transactionTypeID" />
+    </Key>
+    <Property Name="transactionTypeID" Type="Int32" Nullable="false" />
+    <Property Name="transactionTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tran_transaction" Relationship="Self.FK_tran_transaction_tran_transactionType" FromRole="tran_transactionType" ToRole="tran_transaction" />
+  </EntityType>
+  <EntityType Name="VMS_LOG">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="visitorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorCarNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visit_purpose" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visit_person_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorChkIn" Type="DateTime" Precision="3" />
+    <Property Name="visitorChkOut" Type="DateTime" Precision="3" />
+    <Property Name="tosee_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tosee_addr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorImg1" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorImg2" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorImg3" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorCardLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitArea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lostCard" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="DLSCalendar">
+    <Key>
+      <PropertyRef Name="CalendarId" />
+      <PropertyRef Name="DateValue" />
+      <PropertyRef Name="DayNumberOfWeek" />
+      <PropertyRef Name="NameOfDay" />
+      <PropertyRef Name="NameOfMonth" />
+      <PropertyRef Name="WeekOfYear" />
+      <PropertyRef Name="JulianDay" />
+      <PropertyRef Name="USAIsBankHoliday" />
+    </Key>
+    <Property Name="CalendarId" Type="Int32" Nullable="false" />
+    <Property Name="DateValue" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DayNumberOfWeek" Type="Int32" Nullable="false" />
+    <Property Name="NameOfDay" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NameOfMonth" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WeekOfYear" Type="Int32" Nullable="false" />
+    <Property Name="JulianDay" Type="Int32" Nullable="false" />
+    <Property Name="USAIsBankHoliday" Type="Boolean" Nullable="false" />
+    <Property Name="USADayName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tran_priceMonthly">
+    <Key>
+      <PropertyRef Name="priceMonthlyID" />
+      <PropertyRef Name="priceMonthlyName" />
+      <PropertyRef Name="priceMonthlyValue" />
+      <PropertyRef Name="priceMonthlyActive" />
+    </Key>
+    <Property Name="priceMonthlyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="priceMonthlyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="priceMonthlyValue" Type="Int32" Nullable="false" />
+    <Property Name="priceMonthlyActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SumOfDateSery">
+    <Key>
+      <PropertyRef Name="DateValue" />
+    </Key>
+    <Property Name="DateValue" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="sumOfDate" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tmpHourOnDateSery">
+    <Key>
+      <PropertyRef Name="hour_id" />
+    </Key>
+    <Property Name="DateTimeValue" Type="DateTime" Precision="3" />
+    <Property Name="hour_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="view_accessright">
+    <Key>
+      <PropertyRef Name="permissionID" />
+      <PropertyRef Name="permissionName" />
+    </Key>
+    <Property Name="permissionID" Type="Int32" Nullable="false" />
+    <Property Name="permissionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sysUserLoginName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserID" Type="Int32" />
+    <Property Name="sysUserTypeID" Type="Int32" />
+    <Property Name="sysUserTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserTypePermissionRead" Type="Boolean" />
+    <Property Name="sysUserTypePermissionNew" Type="Boolean" />
+    <Property Name="sysUserTypePermissionEdit" Type="Boolean" />
+    <Property Name="sysUserTypePermissionDel" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="view_accounting_all">
+    <Key>
+      <PropertyRef Name="accountingID" />
+      <PropertyRef Name="accountingPrices" />
+      <PropertyRef Name="accountingDiscount" />
+      <PropertyRef Name="accountingReceive" />
+      <PropertyRef Name="accountingDateTime" />
+      <PropertyRef Name="userID" />
+      <PropertyRef Name="accountingTypeID" />
+    </Key>
+    <Property Name="accountingID" Type="Int32" Nullable="false" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="accountingPrices" Type="Double" Nullable="false" />
+    <Property Name="accountingDiscount" Type="Double" Nullable="false" />
+    <Property Name="accountingReceive" Type="Double" Nullable="false" />
+    <Property Name="accountingDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ticketMemberName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="sysUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="accountingTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="accountingTypeID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="view_Emergency_ALL">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="transactionChkIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionChkOut" Type="DateTime" Precision="3" />
+    <Property Name="gateIn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gateOut" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="transactionLastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="view_EStamp_log">
+    <Key>
+      <PropertyRef Name="priceProfileChangeLogID" />
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="priceProfileChangeLogDateTime" />
+    </Key>
+    <Property Name="priceProfileChangeLogID" Type="Int32" Nullable="false" />
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileChangeLogDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="oldProfile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="newProfile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileChangeLogComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="view_EStamp_log_DisTinc_transID">
+    <Key>
+      <PropertyRef Name="transactionID" />
+    </Key>
+    <Property Name="Last_priceProfileChangeLogID" Type="Int32" />
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileChangeLogDateTime" Type="DateTime" Precision="3" />
+    <Property Name="priceProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="view_parkingAreaInfo">
+    <Key>
+      <PropertyRef Name="parkingAreaID" />
+      <PropertyRef Name="parkingAreaName" />
+      <PropertyRef Name="parkingAreaSlotAvaliable" />
+    </Key>
+    <Property Name="parkingAreaID" Type="Int32" Nullable="false" />
+    <Property Name="parkingAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parkingAreaSlotAvaliable" Type="Int32" Nullable="false" />
+    <Property Name="count" Type="Int32" />
+    <Property Name="parkingAreaSlotRemain" Type="Int32" />
+  </EntityType>
+  <EntityType Name="view_priceProfile">
+    <Key>
+      <PropertyRef Name="priceProfileID" />
+      <PropertyRef Name="priceProfileDayID" />
+      <PropertyRef Name="priceProfileName" />
+      <PropertyRef Name="priceProfileActive" />
+      <PropertyRef Name="carTypeID" />
+      <PropertyRef Name="priceProfileFlooringMode" />
+      <PropertyRef Name="priceProfileLostCardFee" />
+      <PropertyRef Name="priceProfileOverNightFee" />
+      <PropertyRef Name="ticketMemberTypeID" />
+      <PropertyRef Name="priceProfileTypeID" />
+      <PropertyRef Name="priceProfileDayFreeTime" />
+      <PropertyRef Name="priceProfileDayServiceCharge" />
+      <PropertyRef Name="priceProfileDayNumOfDay" />
+      <PropertyRef Name="priceProfileHourID" />
+      <PropertyRef Name="priceProfileHourNo" />
+      <PropertyRef Name="priceProfileHourRate" />
+      <PropertyRef Name="priceProfileDiscountInCashier" />
+      <PropertyRef Name="priceProfileColor" />
+      <PropertyRef Name="priceProfileFlooringOffset" />
+    </Key>
+    <Property Name="priceProfileID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDayID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="priceProfileActive" Type="Boolean" Nullable="false" />
+    <Property Name="carTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileFlooringMode" Type="Boolean" Nullable="false" />
+    <Property Name="priceProfileLostCardFee" Type="Double" Nullable="false" />
+    <Property Name="priceProfileOverNightFee" Type="Double" Nullable="false" />
+    <Property Name="priceProfileMultiOverNightMode" Type="Int32" />
+    <Property Name="ticketMemberTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileTypeID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDayFreeTime" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileDayServiceCharge" Type="Double" Nullable="false" />
+    <Property Name="priceProfileDayNumOfDay" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileHourID" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileHourNo" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileHourRate" Type="Double" Nullable="false" />
+    <Property Name="priceProfileDiscountInCashier" Type="Boolean" Nullable="false" />
+    <Property Name="priceProfileColor" Type="Int32" Nullable="false" />
+    <Property Name="priceProfileFlooringOffset" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="view_ticketInfo">
+    <Key>
+      <PropertyRef Name="ticketID" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="ticketTypeID" />
+      <PropertyRef Name="ticketStartDate" />
+      <PropertyRef Name="ticketExpiryDate" />
+      <PropertyRef Name="ticketActive" />
+      <PropertyRef Name="ticketRemainTimes" />
+      <PropertyRef Name="ticketCredit" />
+      <PropertyRef Name="ticketDateUpdate" />
+      <PropertyRef Name="userID_Create" />
+    </Key>
+    <Property Name="ticketID" Type="Int32" Nullable="false" />
+    <Property Name="ticketMemberID" Type="Int32" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ticketMemberName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ticketTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ticketTypeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ticketStartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ticketExpiryDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ticketActive" Type="Boolean" Nullable="false" />
+    <Property Name="ticketRemainTimes" Type="Int32" Nullable="false" />
+    <Property Name="ticketCredit" Type="Double" Nullable="false" />
+    <Property Name="ticketDateUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="sysUserName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="userID_Create" Type="Int32" Nullable="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="carBrandName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="provinceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carModel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberTel" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberEmail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="ticketMemberAddr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="carID" Type="Int32" />
+    <Property Name="ticketRemainDay" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="ticketRemainSecond" Type="Int32" />
+    <Property Name="priceMonthlyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="view_transaction_all">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="transactionTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="transactionChkIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionChkOut" Type="DateTime" Precision="3" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gateIn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gateOut" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateCity" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="transactionLastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileColor" Type="Int32" />
+    <Property Name="transactionParkingTime" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="view_transaction_all_parkingTime">
+    <Key>
+      <PropertyRef Name="transactionID" />
+      <PropertyRef Name="transactionChkIn" />
+      <PropertyRef Name="ticketNumber" />
+      <PropertyRef Name="transactionLastUpdate" />
+    </Key>
+    <Property Name="transactionID" Type="Int32" Nullable="false" />
+    <Property Name="transactionTypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="transactionChkIn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionChkOut" Type="DateTime" Precision="3" />
+    <Property Name="parkingTime" Type="Int32" />
+    <Property Name="ticketNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gateIn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gateOut" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserIn" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sysUserOut" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateNumber" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="carPlateCity" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="transactionLastUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="transactionComment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="priceProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="transactionParkingTime" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="view_VMS_log_stayTime">
+    <Key>
+      <PropertyRef Name="logId" />
+    </Key>
+    <Property Name="logId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="visitorName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorTel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorCarNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visit_purpose" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visit_person_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorChkIn" Type="DateTime" Precision="3" />
+    <Property Name="visitorChkOut" Type="DateTime" Precision="3" />
+    <Property Name="tosee_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tosee_addr" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ticketId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitorImg1" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorImg2" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorImg3" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="visitorCardLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="visitArea" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="lostCard" Type="Boolean" />
+    <Property Name="MinuteDiff" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_accounting_accountingType">
+    <End Role="accountingType" Type="Self.accountingType" Multiplicity="1" />
+    <End Role="accounting" Type="Self.accounting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accountingType">
+        <PropertyRef Name="accountingTypeID" />
+      </Principal>
+      <Dependent Role="accounting">
+        <PropertyRef Name="accountingTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_accounting_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="accounting" Type="Self.accounting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="accounting">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_accounting">
+    <End Role="accounting" Type="Self.accounting" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounting">
+        <PropertyRef Name="accountingID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="priceMonthlyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_accounting">
+    <End Role="accounting" Type="Self.accounting" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="accounting">
+        <PropertyRef Name="accountingID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="accountingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_car_carBrand">
+    <End Role="car_carBrand" Type="Self.car_carBrand" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carBrand">
+        <PropertyRef Name="carBrandID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="carBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_car_carType">
+    <End Role="car_carType" Type="Self.car_carType" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carType">
+        <PropertyRef Name="carTypeID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="carTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_car_param_province">
+    <End Role="param_province" Type="Self.param_province" Multiplicity="0..1" />
+    <End Role="car" Type="Self.car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="param_province">
+        <PropertyRef Name="provinceID" />
+      </Principal>
+      <Dependent Role="car">
+        <PropertyRef Name="ProvinceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_car">
+    <End Role="car" Type="Self.car" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car">
+        <PropertyRef Name="carID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="carID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_car_carType">
+    <End Role="car_carType" Type="Self.car_carType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="car_carType">
+        <PropertyRef Name="carTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="carTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_building_company_1">
+    <End Role="sysOwnerCompany" Type="Self.sysOwnerCompany" Multiplicity="1" />
+    <End Role="parkingArea" Type="Self.parkingArea" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysOwnerCompany">
+        <PropertyRef Name="ownerCompanyID" />
+      </Principal>
+      <Dependent Role="parkingArea">
+        <PropertyRef Name="OnwerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysGate_parkingArea">
+    <End Role="parkingArea" Type="Self.parkingArea" Multiplicity="1" />
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parkingArea">
+        <PropertyRef Name="parkingAreaID" />
+      </Principal>
+      <Dependent Role="sysGate">
+        <PropertyRef Name="parkingAreaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_gate_Match_reader_sys_reader">
+    <End Role="sysReader" Type="Self.sysReader" Multiplicity="0..1" />
+    <End Role="sys_gate_Match_reader" Type="Self.sys_gate_Match_reader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysReader">
+        <PropertyRef Name="readerID" />
+      </Principal>
+      <Dependent Role="sys_gate_Match_reader">
+        <PropertyRef Name="readerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_sysUserType_permission_sys_permission">
+    <End Role="sys_permission" Type="Self.sys_permission" Multiplicity="1" />
+    <End Role="sys_sysUserType_permission" Type="Self.sys_sysUserType_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sys_permission">
+        <PropertyRef Name="permissionID" />
+      </Principal>
+      <Dependent Role="sys_sysUserType_permission">
+        <PropertyRef Name="permissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_permis_control_sys_controllist">
+    <End Role="sysUserType" Type="Self.sysUserType" Multiplicity="1" />
+    <End Role="sys_sysUserType_permission" Type="Self.sys_sysUserType_permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUserType">
+        <PropertyRef Name="sysUserTypeID" />
+      </Principal>
+      <Dependent Role="sys_sysUserType_permission">
+        <PropertyRef Name="sysUserTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysGate">
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysGate">
+        <PropertyRef Name="gateID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="gateID_IN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysGate1">
+    <End Role="sysGate" Type="Self.sysGate" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysGate">
+        <PropertyRef Name="gateID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="gateID_OUT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUser_sysOwnerCompany">
+    <End Role="sysOwnerCompany" Type="Self.sysOwnerCompany" Multiplicity="0..1" />
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysOwnerCompany">
+        <PropertyRef Name="ownerCompanyID" />
+      </Principal>
+      <Dependent Role="sysUser">
+        <PropertyRef Name="OwnerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserLog_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="sysUserLog" Type="Self.sysUserLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="sysUserLog">
+        <PropertyRef Name="sysUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="userID_Create" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="sysUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysUser">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="sysUserID_ChkIn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_sysUser1">
+    <End Role="sysUser" Type="Self.sysUser" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUser">
+        <PropertyRef Name="sysUserID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="sysUserID_ChkOut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_ticketType">
+    <End Role="ticketType" Type="Self.ticketType" Multiplicity="1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketType">
+        <PropertyRef Name="ticketTypeId" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="ticketTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticket_visitor">
+    <End Role="ticketMember" Type="Self.ticketMember" Multiplicity="0..1" />
+    <End Role="ticket" Type="Self.ticket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMember">
+        <PropertyRef Name="ticketMemberID" />
+      </Principal>
+      <Dependent Role="ticket">
+        <PropertyRef Name="ticketMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ticketMember_ticketMemberType">
+    <End Role="ticketMemberType" Type="Self.ticketMemberType" Multiplicity="1" />
+    <End Role="ticketMember" Type="Self.ticketMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMemberType">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Principal>
+      <Dependent Role="ticketMember">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_visitorType">
+    <End Role="ticketMemberType" Type="Self.ticketMemberType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ticketMemberType">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="ticketMemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfile_tran_PriceProfileType">
+    <End Role="tran_priceProfileType" Type="Self.tran_priceProfileType" Multiplicity="1" />
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfileType">
+        <PropertyRef Name="priceProfileTypeID" />
+      </Principal>
+      <Dependent Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="priceProfileOldID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_priceProfile1">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="priceProfileNewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileDay_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="1" />
+    <End Role="tran_priceProfileDay" Type="Self.tran_priceProfileDay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileDay">
+        <PropertyRef Name="priceProfileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_tran_priceProfile">
+    <End Role="tran_priceProfile" Type="Self.tran_priceProfile" Multiplicity="0..1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfile">
+        <PropertyRef Name="priceProfileID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="priceProfileID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileChangeLog_tran_transaction">
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="1" />
+    <End Role="tran_priceProfileChangeLog" Type="Self.tran_priceProfileChangeLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_transaction">
+        <PropertyRef Name="transactionID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileChangeLog">
+        <PropertyRef Name="transactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_priceProfileHour_tran_priceProfileDay">
+    <End Role="tran_priceProfileDay" Type="Self.tran_priceProfileDay" Multiplicity="1" />
+    <End Role="tran_priceProfileHour" Type="Self.tran_priceProfileHour" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_priceProfileDay">
+        <PropertyRef Name="priceProfileDayID" />
+      </Principal>
+      <Dependent Role="tran_priceProfileHour">
+        <PropertyRef Name="priceProfileDayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tran_transaction_tran_transactionType">
+    <End Role="tran_transactionType" Type="Self.tran_transactionType" Multiplicity="1" />
+    <End Role="tran_transaction" Type="Self.tran_transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tran_transactionType">
+        <PropertyRef Name="transactionTypeID" />
+      </Principal>
+      <Dependent Role="tran_transaction">
+        <PropertyRef Name="transactionTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Dpark3Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="accountings" EntityType="Self.accounting" />
+    <EntitySet Name="accountingTypes" EntityType="Self.accountingType" />
+    <EntitySet Name="cars" EntityType="Self.car" />
+    <EntitySet Name="car_carBrand" EntityType="Self.car_carBrand" />
+    <EntitySet Name="car_carType" EntityType="Self.car_carType" />
+    <EntitySet Name="DLSHours" EntityType="Self.DLSHour" />
+    <EntitySet Name="param_blackListVehicle" EntityType="Self.param_blackListVehicle" />
+    <EntitySet Name="param_holiday" EntityType="Self.param_holiday" />
+    <EntitySet Name="param_province" EntityType="Self.param_province" />
+    <EntitySet Name="param_systemLog" EntityType="Self.param_systemLog" />
+    <EntitySet Name="param_systemParam" EntityType="Self.param_systemParam" />
+    <EntitySet Name="parkingAreas" EntityType="Self.parkingArea" />
+    <EntitySet Name="parkingArea_reservParking" EntityType="Self.parkingArea_reservParking" />
+    <EntitySet Name="sys_gate_Match_reader" EntityType="Self.sys_gate_Match_reader" />
+    <EntitySet Name="sys_permission" EntityType="Self.sys_permission" />
+    <EntitySet Name="sys_sysUserType_permission" EntityType="Self.sys_sysUserType_permission" />
+    <EntitySet Name="sysGates" EntityType="Self.sysGate" />
+    <EntitySet Name="sysOwnerCompanies" EntityType="Self.sysOwnerCompany" />
+    <EntitySet Name="sysReaders" EntityType="Self.sysReader" />
+    <EntitySet Name="sysUsers" EntityType="Self.sysUser" />
+    <EntitySet Name="sysUserLogs" EntityType="Self.sysUserLog" />
+    <EntitySet Name="sysUserTypes" EntityType="Self.sysUserType" />
+    <EntitySet Name="tickets" EntityType="Self.ticket" />
+    <EntitySet Name="ticketMembers" EntityType="Self.ticketMember" />
+    <EntitySet Name="ticketMemberTypes" EntityType="Self.ticketMemberType" />
+    <EntitySet Name="ticketTypes" EntityType="Self.ticketType" />
+    <EntitySet Name="tran_emergencyType" EntityType="Self.tran_emergencyType" />
+    <EntitySet Name="tran_priceDialy" EntityType="Self.tran_priceDialy" />
+    <EntitySet Name="tran_priceProfile" EntityType="Self.tran_priceProfile" />
+    <EntitySet Name="tran_priceProfileChangeLog" EntityType="Self.tran_priceProfileChangeLog" />
+    <EntitySet Name="tran_priceProfileDay" EntityType="Self.tran_priceProfileDay" />
+    <EntitySet Name="tran_priceProfileHour" EntityType="Self.tran_priceProfileHour" />
+    <EntitySet Name="tran_priceProfileType" EntityType="Self.tran_priceProfileType" />
+    <EntitySet Name="tran_transaction" EntityType="Self.tran_transaction" />
+    <EntitySet Name="tran_transactionType" EntityType="Self.tran_transactionType" />
+    <EntitySet Name="VMS_LOG" EntityType="Self.VMS_LOG" />
+    <EntitySet Name="DLSCalendars" EntityType="Self.DLSCalendar" />
+    <EntitySet Name="tran_priceMonthly" EntityType="Self.tran_priceMonthly" />
+    <EntitySet Name="SumOfDateSeries" EntityType="Self.SumOfDateSery" />
+    <EntitySet Name="tmpHourOnDateSeries" EntityType="Self.tmpHourOnDateSery" />
+    <EntitySet Name="view_accessright" EntityType="Self.view_accessright" />
+    <EntitySet Name="view_accounting_all" EntityType="Self.view_accounting_all" />
+    <EntitySet Name="view_Emergency_ALL" EntityType="Self.view_Emergency_ALL" />
+    <EntitySet Name="view_EStamp_log" EntityType="Self.view_EStamp_log" />
+    <EntitySet Name="view_EStamp_log_DisTinc_transID" EntityType="Self.view_EStamp_log_DisTinc_transID" />
+    <EntitySet Name="view_parkingAreaInfo" EntityType="Self.view_parkingAreaInfo" />
+    <EntitySet Name="view_priceProfile" EntityType="Self.view_priceProfile" />
+    <EntitySet Name="view_ticketInfo" EntityType="Self.view_ticketInfo" />
+    <EntitySet Name="view_transaction_all" EntityType="Self.view_transaction_all" />
+    <EntitySet Name="view_transaction_all_parkingTime" EntityType="Self.view_transaction_all_parkingTime" />
+    <EntitySet Name="view_VMS_log_stayTime" EntityType="Self.view_VMS_log_stayTime" />
+    <AssociationSet Name="FK_accounting_accountingType" Association="Self.FK_accounting_accountingType">
+      <End Role="accountingType" EntitySet="accountingTypes" />
+      <End Role="accounting" EntitySet="accountings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_accounting_sysUser" Association="Self.FK_accounting_sysUser">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="accounting" EntitySet="accountings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_accounting" Association="Self.FK_ticket_accounting">
+      <End Role="accounting" EntitySet="accountings" />
+      <End Role="ticket" EntitySet="tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_accounting" Association="Self.FK_tran_transaction_accounting">
+      <End Role="accounting" EntitySet="accountings" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_car_carBrand" Association="Self.FK_car_car_carBrand">
+      <End Role="car_carBrand" EntitySet="car_carBrand" />
+      <End Role="car" EntitySet="cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_car_carType" Association="Self.FK_car_car_carType">
+      <End Role="car_carType" EntitySet="car_carType" />
+      <End Role="car" EntitySet="cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_car_param_province" Association="Self.FK_car_param_province">
+      <End Role="param_province" EntitySet="param_province" />
+      <End Role="car" EntitySet="cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_car" Association="Self.FK_ticket_car">
+      <End Role="car" EntitySet="cars" />
+      <End Role="ticket" EntitySet="tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_car_carType" Association="Self.FK_tran_priceProfile_car_carType">
+      <End Role="car_carType" EntitySet="car_carType" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="fk_building_company_1" Association="Self.fk_building_company_1">
+      <End Role="sysOwnerCompany" EntitySet="sysOwnerCompanies" />
+      <End Role="parkingArea" EntitySet="parkingAreas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysGate_parkingArea" Association="Self.FK_sysGate_parkingArea">
+      <End Role="parkingArea" EntitySet="parkingAreas" />
+      <End Role="sysGate" EntitySet="sysGates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_gate_Match_reader_sys_reader" Association="Self.FK_sys_gate_Match_reader_sys_reader">
+      <End Role="sysReader" EntitySet="sysReaders" />
+      <End Role="sys_gate_Match_reader" EntitySet="sys_gate_Match_reader" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_sysUserType_permission_sys_permission" Association="Self.FK_sys_sysUserType_permission_sys_permission">
+      <End Role="sys_permission" EntitySet="sys_permission" />
+      <End Role="sys_sysUserType_permission" EntitySet="sys_sysUserType_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_permis_control_sys_controllist" Association="Self.FK_sys_permis_control_sys_controllist">
+      <End Role="sysUserType" EntitySet="sysUserTypes" />
+      <End Role="sys_sysUserType_permission" EntitySet="sys_sysUserType_permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysGate" Association="Self.FK_tran_transaction_sysGate">
+      <End Role="sysGate" EntitySet="sysGates" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysGate1" Association="Self.FK_tran_transaction_sysGate1">
+      <End Role="sysGate" EntitySet="sysGates" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUser_sysOwnerCompany" Association="Self.FK_sysUser_sysOwnerCompany">
+      <End Role="sysOwnerCompany" EntitySet="sysOwnerCompanies" />
+      <End Role="sysUser" EntitySet="sysUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserLog_sysUser" Association="Self.FK_sysUserLog_sysUser">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="sysUserLog" EntitySet="sysUserLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_sysUser" Association="Self.FK_ticket_sysUser">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="ticket" EntitySet="tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_sysUser" Association="Self.FK_tran_priceProfileChangeLog_sysUser">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysUser" Association="Self.FK_tran_transaction_sysUser">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_sysUser1" Association="Self.FK_tran_transaction_sysUser1">
+      <End Role="sysUser" EntitySet="sysUsers" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_ticketType" Association="Self.FK_ticket_ticketType">
+      <End Role="ticketType" EntitySet="ticketTypes" />
+      <End Role="ticket" EntitySet="tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticket_visitor" Association="Self.FK_ticket_visitor">
+      <End Role="ticketMember" EntitySet="ticketMembers" />
+      <End Role="ticket" EntitySet="tickets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ticketMember_ticketMemberType" Association="Self.FK_ticketMember_ticketMemberType">
+      <End Role="ticketMemberType" EntitySet="ticketMemberTypes" />
+      <End Role="ticketMember" EntitySet="ticketMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_visitorType" Association="Self.FK_tran_priceProfile_visitorType">
+      <End Role="ticketMemberType" EntitySet="ticketMemberTypes" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfile_tran_PriceProfileType" Association="Self.FK_tran_priceProfile_tran_PriceProfileType">
+      <End Role="tran_priceProfileType" EntitySet="tran_priceProfileType" />
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_priceProfile" Association="Self.FK_tran_priceProfileChangeLog_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_priceProfile1" Association="Self.FK_tran_priceProfileChangeLog_tran_priceProfile1">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileDay_tran_priceProfile" Association="Self.FK_tran_priceProfileDay_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_priceProfileDay" EntitySet="tran_priceProfileDay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_tran_priceProfile" Association="Self.FK_tran_transaction_tran_priceProfile">
+      <End Role="tran_priceProfile" EntitySet="tran_priceProfile" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileChangeLog_tran_transaction" Association="Self.FK_tran_priceProfileChangeLog_tran_transaction">
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+      <End Role="tran_priceProfileChangeLog" EntitySet="tran_priceProfileChangeLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_priceProfileHour_tran_priceProfileDay" Association="Self.FK_tran_priceProfileHour_tran_priceProfileDay">
+      <End Role="tran_priceProfileDay" EntitySet="tran_priceProfileDay" />
+      <End Role="tran_priceProfileHour" EntitySet="tran_priceProfileHour" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tran_transaction_tran_transactionType" Association="Self.FK_tran_transaction_tran_transactionType">
+      <End Role="tran_transactionType" EntitySet="tran_transactionType" />
+      <End Role="tran_transaction" EntitySet="tran_transaction" />
+    </AssociationSet>
+    <FunctionImport Name="stProDate" ReturnType="Collection(Dpark3Model.stProDate_Result)">
+      <Parameter Name="startDate" Mode="In" Type="DateTime" />
+      <Parameter Name="endDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="stProDateOnMonth" ReturnType="Collection(Dpark3Model.stProDateOnMonth_Result)">
+      <Parameter Name="startMonth" Mode="In" Type="DateTime" />
+      <Parameter Name="endMonth" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="stProHourOnDate" ReturnType="Collection(Dpark3Model.stProHourOnDate_Result)">
+      <Parameter Name="startDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="stProYear" ReturnType="Collection(Dpark3Model.stProYear_Result)">
+      <Parameter Name="startYear" Mode="In" Type="Int32" />
+      <Parameter Name="endYear" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_accounting_all_bydate_userID_accType" ReturnType="Collection(Dpark3Model.tr_accounting_all_bydate_userID_accType_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="accountingTypeID" Mode="In" Type="Int32" />
+      <Parameter Name="sysUserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_accounting_saleTicket_bydate_userID_accType" ReturnType="Collection(Dpark3Model.tr_accounting_saleTicket_bydate_userID_accType_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="sysUserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_report_cashier" ReturnType="Collection(Dpark3Model.tr_report_cashier_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_report_cashier_sum" ReturnType="Collection(Dpark3Model.tr_report_cashier_sum_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="userId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_ticket_moreInfo" ReturnType="Collection(Dpark3Model.tr_ticket_moreInfo_Result)">
+      <Parameter Name="ticketID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_ticket_paymentHistory" ReturnType="Collection(Dpark3Model.tr_ticket_paymentHistory_Result)">
+      <Parameter Name="ticketID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_allTime_byCarPlateNumber" ReturnType="Collection(Dpark3Model.tr_transaction_allTime_byCarPlateNumber_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="carPlateNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_allTime_bydate" ReturnType="Collection(Dpark3Model.tr_transaction_allTime_bydate_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_Emergency" ReturnType="Collection(Dpark3Model.tr_transaction_Emergency_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_ForceChkOut_byCarPlateNumber" ReturnType="Collection(Dpark3Model.tr_transaction_ForceChkOut_byCarPlateNumber_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="carPlateNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_InParking" ReturnType="Collection(Dpark3Model.tr_transaction_InParking_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_InParking_byCarPlateNumber" ReturnType="Collection(Dpark3Model.tr_transaction_InParking_byCarPlateNumber_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="carPlateNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_IsLostCard_byCarPlateNumber" ReturnType="Collection(Dpark3Model.tr_transaction_IsLostCard_byCarPlateNumber_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="carPlateNumber" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_moreInfo" ReturnType="Collection(Dpark3Model.tr_transaction_moreInfo_Result)">
+      <Parameter Name="tranID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="tr_transaction_Stamp_Log" ReturnType="Collection(Dpark3Model.tr_transaction_Stamp_Log_Result)">
+      <Parameter Name="beginDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="endDateTime" Mode="In" Type="DateTime" />
+      <Parameter Name="carPlateNumber" Mode="In" Type="String" />
+      <Parameter Name="ticketNumber" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="stProDate_Result">
+    <Property Type="DateTime" Name="DateValue" Nullable="false" />
+    <Property Type="Int32" Name="sumOfDate" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="stProDateOnMonth_Result">
+    <Property Type="DateTime" Name="MonthSeries" Nullable="true" />
+    <Property Type="Int32" Name="SumOfMonth" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="stProHourOnDate_Result">
+    <Property Type="Int32" Name="hour_id" Nullable="false" />
+    <Property Type="Int32" Name="SumOfHour" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="stProYear_Result">
+    <Property Type="Int32" Name="YearValue" Nullable="true" />
+    <Property Type="Int32" Name="SumOfYear" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="tr_accounting_all_bydate_userID_accType_Result">
+    <Property Type="Int32" Name="accountingID" Nullable="false" />
+    <Property Type="String" Name="ticketNumber" Nullable="true" MaxLength="15" />
+    <Property Type="Double" Name="accountingPrices" Nullable="false" />
+    <Property Type="Double" Name="accountingDiscount" Nullable="false" />
+    <Property Type="Double" Name="accountingReceive" Nullable="false" />
+    <Property Type="DateTime" Name="accountingDateTime" Nullable="false" Precision="23" />
+    <Property Type="String" Name="ticketMemberName" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="Int32" Name="userID" Nullable="false" />
+    <Property Type="String" Name="sysUserName" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="accountingTypeName" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="accountingTypeID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="tr_accounting_saleTicket_bydate_userID_accType_Result">
+    <Property Type="Int32" Name="accountingID" Nullable="false" />
+    <Property Type="String" Name="accountingTypeName" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="accountingDateTime" Nullable="false" Precision="23" />
+    <Property Type="String" Name="sysUserName" Nullable="true" MaxLength="20" />
+    <Property Type="Double" Name="accountingPrices" Nullable="false" />
+    <Property Type="Double" Name="accountingDiscount" Nullable="false" />
+    <Property Type="Double" Name="accountingReceive" Nullable="false" />
+    <Property Type="String" Name="accountingComment" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="userID" Nullable="false" />
+    <Property Type="Int32" Name="accountingTypeID" Nullable="false" />
+    <Property Type="String" Name="ticketNumber" Nullable="true" MaxLength="15" />
+  </ComplexType>
+  <ComplexType Name="tr_report_cashier_Result">
+    <Property Type="Int32" Name="sysUserID" Nullable="true" />
+    <Property Type="String" Name="ChkOutUser" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="tranChkOut" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="accountingPrices" Nullable="true" />
+    <Property Type="Double" Name="accountingDiscount" Nullable="true" />
+    <Property Type="Double" Name="accountingReceive" Nullable="true" />
+    <Property Type="Int32" Name="countOfChkOut" Nullable="true" />
+    <Property Type="Int32" Name="countPaymentTime" Nullable="true" />
+    <Property Type="Int32" Name="countEStamp" Nullable="true" />
+    <Property Type="Int32" Name="countEmergency" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="tr_report_cashier_sum_Result">
+    <Property Type="Int32" Name="sysUserID" Nullable="true" />
+    <Property Type="String" Name="ChkOutUser" Nullable="true" MaxLength="20" />
+    <Property Type="Double" Name="accountingPrices" Nullable="true" />
+    <Property Type="Double" Name="accountingDiscount" Nullable="true" />
+    <Property Type="Double" Name="accountingReceive" Nullable="true" />
+    <Property Type="Int32" Name="countOfChkOut" Nullable="true" />
+    <Property Type="Int32" Name="countPaymentTime" Nullable="true" />
+    <Property Type="Int32" Name="countEStamp" Nullable="true" />
+    <Property Type="Int32" Name="countEmergency" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="tr_ticket_moreInfo_Result">
+    <Property Type="Int32" Name="ticketID" Nullable="false" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="ticketMemberName" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="ticketTypeName" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="ticketMemberTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceMonthlyName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ticketMemberTel" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="ticketMemberEmail" Nullable="true" MaxLength="80" />
+    <Property Type="String" Name="ticketMemberAddr" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="ticketStartDate" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="ticketExpiryDate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="ticketRemainDay" Nullable="true" MaxLength="14" />
+    <Property Type="Boolean" Name="ticketActive" Nullable="false" />
+    <Property Type="String" Name="carModel" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carColor" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="provinceName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carBrandName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserLoginName" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="tr_ticket_paymentHistory_Result">
+    <Property Type="Int32" Name="ticketID" Nullable="false" />
+    <Property Type="DateTime" Name="accountingDateTime" Nullable="false" Precision="23" />
+    <Property Type="Double" Name="accountingReceive" Nullable="false" />
+    <Property Type="String" Name="sysUserName" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_allTime_byCarPlateNumber_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="transactionTypeID" Nullable="true" />
+    <Property Type="Double" Name="accountingReceive" Nullable="false" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_allTime_bydate_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="transactionTypeID" Nullable="true" />
+    <Property Type="Double" Name="accountingReceive" Nullable="false" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="sysUserID_ChkOut" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_Emergency_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_ForceChkOut_byCarPlateNumber_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="transactionTypeID" Nullable="true" />
+    <Property Type="Int32" Name="gateID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_InParking_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_InParking_byCarPlateNumber_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_IsLostCard_byCarPlateNumber_Result">
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="String" Name="ticketNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserIn" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="sysUserOut" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="transactionLastUpdate" Nullable="false" Precision="23" />
+    <Property Type="String" Name="transactionComment" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_moreInfo_Result">
+    <Property Type="DateTime" Name="transactionChkIn" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="transactionChkOut" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="transactionID" Nullable="true" />
+    <Property Type="String" Name="transactionTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="transactionParkingTime" Nullable="true" MaxLength="12" />
+    <Property Type="DateTime" Name="ticketStartDate" Nullable="true" Precision="23" />
+    <Property Type="DateTime" Name="ticketExpiryDate" Nullable="true" Precision="23" />
+    <Property Type="Double" Name="accountingPrices" Nullable="true" />
+    <Property Type="Double" Name="accountingDiscount" Nullable="true" />
+    <Property Type="Double" Name="accountingReceive" Nullable="true" />
+    <Property Type="String" Name="TicketUserCreate" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TranChkInSysUser" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="TranChKOutSysUser" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="ticketNumber" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="ticketTypeName" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="ticketMemberName" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="ticketMemberTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ticketMemberTel" Nullable="true" MaxLength="13" />
+    <Property Type="String" Name="ticketMemberAddr" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ticketMemberEmail" Nullable="true" MaxLength="80" />
+    <Property Type="Boolean" Name="ticketMemberActive" Nullable="true" />
+    <Property Type="String" Name="carModel" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carColor" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="carTypeName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carBrandName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="provinceName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="priceProfileName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateIn" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="gateOut" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="String" Name="carPlateCity" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="tr_transaction_Stamp_Log_Result">
+    <Property Type="Int32" Name="priceProfileChangeLogID" Nullable="false" />
+    <Property Type="Int32" Name="transactionID" Nullable="false" />
+    <Property Type="String" Name="ticketNumber" Nullable="true" MaxLength="15" />
+    <Property Type="String" Name="carPlateNumber" Nullable="true" MaxLength="8" />
+    <Property Type="DateTime" Name="priceProfileChangeLogDateTime" Nullable="false" Precision="23" />
+    <Property Type="String" Name="oldProfile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="newProfile" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="sysUserName" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="priceProfileChangeLogComment" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

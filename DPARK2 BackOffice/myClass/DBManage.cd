@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BackOffice.DBManage">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="BackOffice.DBManage.TBpriceProfileDay" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBownerCompany" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.viewPriceProfile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBticketMember" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBpriceProfile" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBsysUser" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBticket">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Class Name="BackOffice.DBManage.TBticket.TicketInfo">
+            <TypeIdentifier>
+              <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBAccounting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBsysParam">
+        <NestedTypes>
+          <Enum Name="BackOffice.DBManage.TBsysParam.paramType" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Enum>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBpriceProfileHour" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBparkingArea" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBTransaction">
+        <NestedTypes>
+          <Class Name="BackOffice.DBManage.TBTransaction.TransSactionInfo" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBVms" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBpriceDialy" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="BackOffice.DBManage.TBvisitorType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>myClass\DBManage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAggAAAgAAAAAAABAACEAAAcCAEAAAAAAAAABAA=</HashCode>
+      <FileName>myClass\DBManage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,457 @@
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\DparkTerminal.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\DHNetSDKCS.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.frmReprintBill.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.frmxDiscount.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.fmGate.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.ucCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\66 fixbug 2\Terminal\obj\x86\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\DparkTerminal.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\DHNetSDKCS.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.frmReprintBill.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.frmxDiscount.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.fmGate.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.ucCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\67 public kaseamRat\Terminal\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\DparkTerminal.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\DHNetSDKCS.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.frmReprintBill.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.frmxDiscount.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.fmGate.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.ucCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\68 antipassback\Terminal\obj\x86\Debug\DparkTerminal.ucCameraInOut.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\DparkTerminal.exe.config
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\DHNetSDKCS.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.Video.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\AForge.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.frmReprintBill.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.frmxDiscount.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.fmGate.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.ucCamera.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.ucCameraInOut.resources
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\108-Dpark\Combine\69 public NuSa Sisri\Terminal\obj\x86\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe.config
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.pdb
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DHNetSDKCS.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.pdb
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.xml
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.xml
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+E:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe.config
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.pdb
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.pdb
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\AForge.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Work_DLS\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe.config
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.pdb
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.pdb
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\AForge.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigCamera.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigIOController.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmConfigTerminalMode.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Work_DLS\Mifare Write Cash[DLS-001]\PC\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\DparkTerminal.exe.config
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\DparkTerminal.exe
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\DparkTerminal.pdb
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\BackOffice.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\DHNetSDKCS.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.Extended.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.Video.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.dll
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\BackOffice.pdb
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\EntityFramework.Extended.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.Video.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\bin\Debug\AForge.xml
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.exe
+C:\Users\DLS-Pravit\Desktop\หมูกระทะ\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.FrmMifare.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe.config
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.exe
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DparkTerminal.pdb
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.Video.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\AForge.dll
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\BackOffice.pdb
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.xml
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.exe
+D:\Dropbox\DEV\C#\109 Mifare Write Cash\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\DparkTerminal.exe.config
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.exe
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\DparkTerminal.exe
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\DparkTerminal.pdb
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\BackOffice.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\AForge.Video.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\AForge.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\BackOffice.pdb
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.xml
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.FrmMifare.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Work_DLS\Projects\Mifare Write Cash[DLS-001]\PC\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\DparkTerminal.exe.config
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.exe
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.pdb
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\DparkTerminal.exe
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\DparkTerminal.pdb
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\BackOffice.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\AForge.Video.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\AForge.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\BackOffice.pdb
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.xml
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.FrmMifare.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Work_DLS\Projects\[DLS-001] Mifare Write Cash\PC\Terminal\obj\x86\Debug\DparkTerminal.exe.licenses
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\ECashierTerminal.exe.config
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\ECashierTerminal.exe
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\ECashierTerminal.pdb
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\BackOffice.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\tcpServer.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\AForge.Video.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\AForge.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\BackOffice.pdb
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\tcpServer.pdb
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmHelper.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmSettingIPDevice.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmSettingPrice.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.frmTCPControl.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\ECashierTerminal.exe.licenses
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\ECashierTerminal.exe
+D:\Work_DLS\Projects\[DLS-011] TCPControlTurnStile [Client Concept]\PC\Terminal\obj\x86\Debug\ECashierTerminal.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\ECashierTerminal.exe.config
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\ECashierTerminal.exe
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\ECashierTerminal.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.csprojResolveAssemblyReference.cache
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmCashierReport.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmEmergencyOpenBarier.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmHelper.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmLogin.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmSettingIPDevice.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmSettingPrice.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmSlipConfig.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.fmMainTerminal.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.frmTCPControl.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.Properties.Resources.resources
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\DparkTerminal.csproj.GenerateResource.Cache
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\obj\x86\Debug\ECashierTerminal.exe.licenses
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\ECashierTerminal.exe
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\ECashierTerminal.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\BackOffice.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\DHNetSDKCS.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.SqlServer.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\tcpServer.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\AForge.Video.DirectShow.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.Extended.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\AForge.Video.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\AForge.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\BackOffice.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.SqlServer.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\tcpServer.pdb
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\EntityFramework.Extended.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\[DLS-011] TCPControlTurnStile [Client Concept]\PC\V1.0.0 [Release 03-07-14]\Terminal\bin\Debug\Microsoft.Windows.Design.Extensibility.xml

@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Dpark3ModelStoreContainer" CdmEntityContainer="Dpark3Entities">
+    <EntitySetMapping Name="accountings">
+      <EntityTypeMapping TypeName="Dpark3Model.accounting">
+        <MappingFragment StoreEntitySet="accounting">
+          <ScalarProperty Name="cancleProblemComment" ColumnName="cancleProblemComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="realNumOfPerson" ColumnName="realNumOfPerson" />
+          <ScalarProperty Name="numOfPerson" ColumnName="numOfPerson" />
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+          <ScalarProperty Name="accountingComment" ColumnName="accountingComment" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="accountingTypes">
+      <EntityTypeMapping TypeName="Dpark3Model.accountingType">
+        <MappingFragment StoreEntitySet="accountingType">
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="accountingTypeCode" ColumnName="accountingTypeCode" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cars">
+      <EntityTypeMapping TypeName="Dpark3Model.car">
+        <MappingFragment StoreEntitySet="car">
+          <ScalarProperty Name="carBrandID" ColumnName="carBrandID" />
+          <ScalarProperty Name="ProvinceID" ColumnName="ProvinceID" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carColor" ColumnName="carColor" />
+          <ScalarProperty Name="carModel" ColumnName="carModel" />
+          <ScalarProperty Name="carTypeID" ColumnName="carTypeID" />
+          <ScalarProperty Name="carID" ColumnName="carID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="car_carBrand">
+      <EntityTypeMapping TypeName="Dpark3Model.car_carBrand">
+        <MappingFragment StoreEntitySet="car_carBrand">
+          <ScalarProperty Name="carBrandOrderIndex" ColumnName="carBrandOrderIndex" />
+          <ScalarProperty Name="carBrandName" ColumnName="carBrandName" />
+          <ScalarProperty Name="carBrandID" ColumnName="carBrandID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="car_carType">
+      <EntityTypeMapping TypeName="Dpark3Model.car_carType">
+        <MappingFragment StoreEntitySet="car_carType">
+          <ScalarProperty Name="carTypeActive" ColumnName="carTypeActive" />
+          <ScalarProperty Name="carTypeComment" ColumnName="carTypeComment" />
+          <ScalarProperty Name="carTypeName" ColumnName="carTypeName" />
+          <ScalarProperty Name="carTypeID" ColumnName="carTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DLSHours">
+      <EntityTypeMapping TypeName="Dpark3Model.DLSHour">
+        <MappingFragment StoreEntitySet="DLSHour">
+          <ScalarProperty Name="hh_mm" ColumnName="hh:mm" />
+          <ScalarProperty Name="hour_id" ColumnName="hour_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_blackListVehicle">
+      <EntityTypeMapping TypeName="Dpark3Model.param_blackListVehicle">
+        <MappingFragment StoreEntitySet="param_blackListVehicle">
+          <ScalarProperty Name="blacklistUpdate" ColumnName="blacklistUpdate" />
+          <ScalarProperty Name="plateNumber" ColumnName="plateNumber" />
+          <ScalarProperty Name="blacklistID" ColumnName="blacklistID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_holiday">
+      <EntityTypeMapping TypeName="Dpark3Model.param_holiday">
+        <MappingFragment StoreEntitySet="param_holiday">
+          <ScalarProperty Name="mDate" ColumnName="mDate" />
+          <ScalarProperty Name="holidayId" ColumnName="holidayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_province">
+      <EntityTypeMapping TypeName="Dpark3Model.param_province">
+        <MappingFragment StoreEntitySet="param_province">
+          <ScalarProperty Name="provinceName" ColumnName="provinceName" />
+          <ScalarProperty Name="provinceID" ColumnName="provinceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_systemLog">
+      <EntityTypeMapping TypeName="Dpark3Model.param_systemLog">
+        <MappingFragment StoreEntitySet="param_systemLog">
+          <ScalarProperty Name="logTime" ColumnName="logTime" />
+          <ScalarProperty Name="logDes" ColumnName="logDes" />
+          <ScalarProperty Name="logType" ColumnName="logType" />
+          <ScalarProperty Name="logId" ColumnName="logId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="param_systemParam">
+      <EntityTypeMapping TypeName="Dpark3Model.param_systemParam">
+        <MappingFragment StoreEntitySet="param_systemParam">
+          <ScalarProperty Name="systemParamValue" ColumnName="systemParamValue" />
+          <ScalarProperty Name="systemParamKey" ColumnName="systemParamKey" />
+          <ScalarProperty Name="systemParamID" ColumnName="systemParamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parkingAreas">
+      <EntityTypeMapping TypeName="Dpark3Model.parkingArea">
+        <MappingFragment StoreEntitySet="parkingArea">
+          <ScalarProperty Name="OnwerCompanyID" ColumnName="OnwerCompanyID" />
+          <ScalarProperty Name="parkingAreaComment" ColumnName="parkingAreaComment" />
+          <ScalarProperty Name="parkingAreaCloseTime" ColumnName="parkingAreaCloseTime" />
+          <ScalarProperty Name="parkingAreaOpenTime" ColumnName="parkingAreaOpenTime" />
+          <ScalarProperty Name="parkingAreaActive" ColumnName="parkingAreaActive" />
+          <ScalarProperty Name="parkingAreaSlotAvaliable" ColumnName="parkingAreaSlotAvaliable" />
+          <ScalarProperty Name="parkingAreaName" ColumnName="parkingAreaName" />
+          <ScalarProperty Name="parkingAreaID" ColumnName="parkingAreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="parkingArea_reservParking">
+      <EntityTypeMapping TypeName="Dpark3Model.parkingArea_reservParking">
+        <MappingFragment StoreEntitySet="parkingArea_reservParking">
+          <ScalarProperty Name="reservParkingSlotID" ColumnName="reservParkingSlotID" />
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+          <ScalarProperty Name="reservParkingID" ColumnName="reservParkingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_gate_Match_reader">
+      <EntityTypeMapping TypeName="Dpark3Model.sys_gate_Match_reader">
+        <MappingFragment StoreEntitySet="sys_gate-Match-reader">
+          <ScalarProperty Name="readerID" ColumnName="readerID" />
+          <ScalarProperty Name="gateID" ColumnName="gateID" />
+          <ScalarProperty Name="gatelMatchReaderID" ColumnName="gatelMatchReaderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_permission">
+      <EntityTypeMapping TypeName="Dpark3Model.sys_permission">
+        <MappingFragment StoreEntitySet="sys_permission">
+          <ScalarProperty Name="permissionName" ColumnName="permissionName" />
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_sysUserType_permission">
+      <EntityTypeMapping TypeName="Dpark3Model.sys_sysUserType_permission">
+        <MappingFragment StoreEntitySet="sys_sysUserType_permission">
+          <ScalarProperty Name="sysUserTypePermissionEdit" ColumnName="sysUserTypePermissionEdit" />
+          <ScalarProperty Name="sysUserTypePermissionDel" ColumnName="sysUserTypePermissionDel" />
+          <ScalarProperty Name="sysUserTypePermissionRead" ColumnName="sysUserTypePermissionRead" />
+          <ScalarProperty Name="sysUserTypePermissionNew" ColumnName="sysUserTypePermissionNew" />
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+          <ScalarProperty Name="sysUserTypeID" ColumnName="sysUserTypeID" />
+          <ScalarProperty Name="sysUserTypePermissionID" ColumnName="sysUserTypePermissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Dpark3Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysGates">
+      <EntityTypeMapping TypeName="Dpark3Model.sysGate">
+        <MappingFragment StoreEntitySet="sysGate">
+          <ScalarProperty Name="gateIsAutoType" ColumnName="gateIsAutoType" />
+          <ScalarProperty Name="parkingAreaID" ColumnName="parkingAreaID" />
+          <ScalarProperty Name="gateDirection" ColumnName="gateDirection" />
+          <ScalarProperty Name="gateLocation" ColumnName="gateLocation" />
+          <ScalarProperty Name="gateName" ColumnName="gateName" />
+          <ScalarProperty Name="gateID" ColumnName="gateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysOwnerCompanies">
+      <EntityTypeMapping TypeName="Dpark3Model.sysOwnerCompany">
+        <MappingFragment StoreEntitySet="sysOwnerCompany">
+          <ScalarProperty Name="ownerCompanyFax" ColumnName="ownerCompanyFax" />
+          <ScalarProperty Name="ownerCompanyEmail" ColumnName="ownerCompanyEmail" />
+          <ScalarProperty Name="ownerCompanyTel" ColumnName="ownerCompanyTel" />
+          <ScalarProperty Name="ownerCompanyAddr" ColumnName="ownerCompanyAddr" />
+          <ScalarProperty Name="ownerCompanyActive" ColumnName="ownerCompanyActive" />
+          <ScalarProperty Name="ownerCompanyCodeName" ColumnName="ownerCompanyCodeName" />
+          <ScalarProperty Name="ownerCompanyName" ColumnName="ownerCompanyName" />
+          <ScalarProperty Name="ownerCompanyID" ColumnName="ownerCompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysReaders">
+      <EntityTypeMapping TypeName="Dpark3Model.sysReader">
+        <MappingFragment StoreEntitySet="sysReader">
+          <ScalarProperty Name="readerName" ColumnName="readerName" />
+          <ScalarProperty Name="readerType" ColumnName="readerType" />
+          <ScalarProperty Name="readerID" ColumnName="readerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUsers">
+      <EntityTypeMapping TypeName="Dpark3Model.sysUser">
+        <MappingFragment StoreEntitySet="sysUser">
+          <ScalarProperty Name="sysUserTypeID" ColumnName="sysUserTypeID" />
+          <ScalarProperty Name="OwnerCompanyID" ColumnName="OwnerCompanyID" />
+          <ScalarProperty Name="sysUserActive" ColumnName="sysUserActive" />
+          <ScalarProperty Name="sysUserExpiryDate" ColumnName="sysUserExpiryDate" />
+          <ScalarProperty Name="sysUserAddr" ColumnName="sysUserAddr" />
+          <ScalarProperty Name="sysUserEmail" ColumnName="sysUserEmail" />
+          <ScalarProperty Name="sysUserPhone" ColumnName="sysUserPhone" />
+          <ScalarProperty Name="sysUserTel" ColumnName="sysUserTel" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="sysUserPassword" ColumnName="sysUserPassword" />
+          <ScalarProperty Name="sysUserLoginName" ColumnName="sysUserLoginName" />
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserLogs">
+      <EntityTypeMapping TypeName="Dpark3Model.sysUserLog">
+        <MappingFragment StoreEntitySet="sysUserLog">
+          <ScalarProperty Name="sysUserLogMachineName" ColumnName="sysUserLogMachineName" />
+          <ScalarProperty Name="sysUserLogTime" ColumnName="sysUserLogTime" />
+          <ScalarProperty Name="sysUserLogType" ColumnName="sysUserLogType" />
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+          <ScalarProperty Name="sysUserLogID" ColumnName="sysUserLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserTypes">
+      <EntityTypeMapping TypeName="Dpark3Model.sysUserType">
+        <MappingFragment StoreEntitySet="sysUserType">
+          <ScalarProperty Name="sysUserTypeComment" ColumnName="sysUserTypeComment" />
+          <ScalarProperty Name="sysUserTypeDes" ColumnName="sysUserTypeDes" />
+          <ScalarProperty Name="sysUserTypeName" ColumnName="sysUserTypeName" />
+          <ScalarProperty Name="sysUserTypeID" ColumnName="sysUserTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tickets">
+      <EntityTypeMapping TypeName="Dpark3Model.ticket">
+        <MappingFragment StoreEntitySet="ticket">
+          <ScalarProperty Name="priceMonthlyID" ColumnName="priceMonthlyID" />
+          <ScalarProperty Name="carID" ColumnName="carID" />
+          <ScalarProperty Name="ticketDateUpdate" ColumnName="ticketDateUpdate" />
+          <ScalarProperty Name="userID_Create" ColumnName="userID_Create" />
+          <ScalarProperty Name="ticketCredit" ColumnName="ticketCredit" />
+          <ScalarProperty Name="ticketRemainTimes" ColumnName="ticketRemainTimes" />
+          <ScalarProperty Name="ticketActive" ColumnName="ticketActive" />
+          <ScalarProperty Name="ticketRemainSecond" ColumnName="ticketRemainSecond" />
+          <ScalarProperty Name="ticketRemainDay" ColumnName="ticketRemainDay" />
+          <ScalarProperty Name="ticketExpiryDate" ColumnName="ticketExpiryDate" />
+          <ScalarProperty Name="ticketStartDate" ColumnName="ticketStartDate" />
+          <ScalarProperty Name="ticketMemberID" ColumnName="ticketMemberID" />
+          <ScalarProperty Name="ticketTypeID" ColumnName="ticketTypeID" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticketMembers">
+      <EntityTypeMapping TypeName="Dpark3Model.ticketMember">
+        <MappingFragment StoreEntitySet="ticketMember">
+          <ScalarProperty Name="ticketMemberTypeID" ColumnName="ticketMemberTypeID" />
+          <ScalarProperty Name="ticketMemberActive" ColumnName="ticketMemberActive" />
+          <ScalarProperty Name="ticketMemberEmail" ColumnName="ticketMemberEmail" />
+          <ScalarProperty Name="ticketMemberAddr" ColumnName="ticketMemberAddr" />
+          <ScalarProperty Name="ticketMemberTel" ColumnName="ticketMemberTel" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="ticketMemberID" ColumnName="ticketMemberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticketMemberTypes">
+      <EntityTypeMapping TypeName="Dpark3Model.ticketMemberType">
+        <MappingFragment StoreEntitySet="ticketMemberType">
+          <ScalarProperty Name="ticketMemberTypeActive" ColumnName="ticketMemberTypeActive" />
+          <ScalarProperty Name="ticketMemberTypeComment" ColumnName="ticketMemberTypeComment" />
+          <ScalarProperty Name="ticketMemberTypeName" ColumnName="ticketMemberTypeName" />
+          <ScalarProperty Name="ticketMemberTypeID" ColumnName="ticketMemberTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ticketTypes">
+      <EntityTypeMapping TypeName="Dpark3Model.ticketType">
+        <MappingFragment StoreEntitySet="ticketType">
+          <ScalarProperty Name="ticketTypePolicy" ColumnName="ticketTypePolicy" />
+          <ScalarProperty Name="ticketTypeDes" ColumnName="ticketTypeDes" />
+          <ScalarProperty Name="ticketTypeName" ColumnName="ticketTypeName" />
+          <ScalarProperty Name="ticketTypeId" ColumnName="ticketTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_emergencyType">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_emergencyType">
+        <MappingFragment StoreEntitySet="tran_emergencyType">
+          <ScalarProperty Name="IsGateOutUsed" ColumnName="IsGateOutUsed" />
+          <ScalarProperty Name="IsGateInUsed" ColumnName="IsGateInUsed" />
+          <ScalarProperty Name="emergencyTypeName" ColumnName="emergencyTypeName" />
+          <ScalarProperty Name="emergencyTypeID" ColumnName="emergencyTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceDialy">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceDialy">
+        <MappingFragment StoreEntitySet="tran_priceDialy">
+          <ScalarProperty Name="priceDayName" ColumnName="priceDayName" />
+          <ScalarProperty Name="priceDialyRate" ColumnName="priceDialyRate" />
+          <ScalarProperty Name="priceDialyID" ColumnName="priceDialyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceProfile">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceProfile">
+        <MappingFragment StoreEntitySet="tran_priceProfile">
+          <ScalarProperty Name="priceProfileFlooringOffset" ColumnName="priceProfileFlooringOffset" />
+          <ScalarProperty Name="priceProfileColor" ColumnName="priceProfileColor" />
+          <ScalarProperty Name="priceProfileDiscountInCashier" ColumnName="priceProfileDiscountInCashier" />
+          <ScalarProperty Name="priceProfileTypeID" ColumnName="priceProfileTypeID" />
+          <ScalarProperty Name="priceProfileMultiOverNightMode" ColumnName="priceProfileMultiOverNightMode" />
+          <ScalarProperty Name="priceProfileOverNightFee" ColumnName="priceProfileOverNightFee" />
+          <ScalarProperty Name="ticketMemberTypeID" ColumnName="ticketMemberTypeID" />
+          <ScalarProperty Name="priceProfileLostCardFee" ColumnName="priceProfileLostCardFee" />
+          <ScalarProperty Name="priceProfileFlooringMode" ColumnName="priceProfileFlooringMode" />
+          <ScalarProperty Name="carTypeID" ColumnName="carTypeID" />
+          <ScalarProperty Name="priceProfileActive" ColumnName="priceProfileActive" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="priceProfileID" ColumnName="priceProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceProfileChangeLog">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceProfileChangeLog">
+        <MappingFragment StoreEntitySet="tran_priceProfileChangeLog">
+          <ScalarProperty Name="priceProfileChangeLogComment" ColumnName="priceProfileChangeLogComment" />
+          <ScalarProperty Name="priceProfileChangeLogDateTime" ColumnName="priceProfileChangeLogDateTime" />
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="priceProfileNewID" ColumnName="priceProfileNewID" />
+          <ScalarProperty Name="priceProfileOldID" ColumnName="priceProfileOldID" />
+          <ScalarProperty Name="priceProfileChangeLogID" ColumnName="priceProfileChangeLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceProfileDay">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceProfileDay">
+        <MappingFragment StoreEntitySet="tran_priceProfileDay">
+          <ScalarProperty Name="priceProfileID" ColumnName="priceProfileID" />
+          <ScalarProperty Name="priceProfileDayServiceCharge" ColumnName="priceProfileDayServiceCharge" />
+          <ScalarProperty Name="priceProfileDayFreeTime" ColumnName="priceProfileDayFreeTime" />
+          <ScalarProperty Name="priceProfileDayNumOfDay" ColumnName="priceProfileDayNumOfDay" />
+          <ScalarProperty Name="priceProfileDayID" ColumnName="priceProfileDayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceProfileHour">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceProfileHour">
+        <MappingFragment StoreEntitySet="tran_priceProfileHour">
+          <ScalarProperty Name="priceProfileDayID" ColumnName="priceProfileDayID" />
+          <ScalarProperty Name="priceProfileHourRate" ColumnName="priceProfileHourRate" />
+          <ScalarProperty Name="priceProfileHourNo" ColumnName="priceProfileHourNo" />
+          <ScalarProperty Name="priceProfileHourID" ColumnName="priceProfileHourID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceProfileType">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceProfileType">
+        <MappingFragment StoreEntitySet="tran_priceProfileType">
+          <ScalarProperty Name="priceProfileTypeName" ColumnName="priceProfileTypeName" />
+          <ScalarProperty Name="priceProfileTypeID" ColumnName="priceProfileTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_transaction">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_transaction">
+        <MappingFragment StoreEntitySet="tran_transaction">
+          <ScalarProperty Name="transactionIsLostCard" ColumnName="transactionIsLostCard" />
+          <ScalarProperty Name="gateID_OUT" ColumnName="gateID_OUT" />
+          <ScalarProperty Name="gateID_IN" ColumnName="gateID_IN" />
+          <ScalarProperty Name="sysUserID_ChkOut" ColumnName="sysUserID_ChkOut" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="priceProfileID" ColumnName="priceProfileID" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+          <ScalarProperty Name="realNumOfPerson" ColumnName="realNumOfPerson" />
+          <ScalarProperty Name="numOfPerson" ColumnName="numOfPerson" />
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+          <ScalarProperty Name="sysUserID_ChkIn" ColumnName="sysUserID_ChkIn" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_transaction2">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_transaction2">
+        <MappingFragment StoreEntitySet="tran_transaction2">
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+          <ScalarProperty Name="priceProfileID" ColumnName="priceProfileID" />
+          <ScalarProperty Name="sysUserID_ChkIn" ColumnName="sysUserID_ChkIn" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_transactionType">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_transactionType">
+        <MappingFragment StoreEntitySet="tran_transactionType">
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VMS_LOG">
+      <EntityTypeMapping TypeName="Dpark3Model.VMS_LOG">
+        <MappingFragment StoreEntitySet="VMS_LOG">
+          <ScalarProperty Name="lostCard" ColumnName="lostCard" />
+          <ScalarProperty Name="visitArea" ColumnName="visitArea" />
+          <ScalarProperty Name="visitorCardLocation" ColumnName="visitorCardLocation" />
+          <ScalarProperty Name="visitorImg3" ColumnName="visitorImg3" />
+          <ScalarProperty Name="visitorImg2" ColumnName="visitorImg2" />
+          <ScalarProperty Name="visitorImg1" ColumnName="visitorImg1" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="tosee_addr" ColumnName="tosee_addr" />
+          <ScalarProperty Name="tosee_name" ColumnName="tosee_name" />
+          <ScalarProperty Name="visitorChkOut" ColumnName="visitorChkOut" />
+          <ScalarProperty Name="visitorChkIn" ColumnName="visitorChkIn" />
+          <ScalarProperty Name="visitorCompany" ColumnName="visitorCompany" />
+          <ScalarProperty Name="visit_person_id" ColumnName="visit_person_id" />
+          <ScalarProperty Name="visit_purpose" ColumnName="visit_purpose" />
+          <ScalarProperty Name="visitorEmail" ColumnName="visitorEmail" />
+          <ScalarProperty Name="visitorCarNumber" ColumnName="visitorCarNumber" />
+          <ScalarProperty Name="visitorTel" ColumnName="visitorTel" />
+          <ScalarProperty Name="visitorNote" ColumnName="visitorNote" />
+          <ScalarProperty Name="visitorName" ColumnName="visitorName" />
+          <ScalarProperty Name="logId" ColumnName="logId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DLSCalendars">
+      <EntityTypeMapping TypeName="Dpark3Model.DLSCalendar">
+        <MappingFragment StoreEntitySet="DLSCalendar">
+          <ScalarProperty Name="USADayName" ColumnName="USADayName" />
+          <ScalarProperty Name="USAIsBankHoliday" ColumnName="USAIsBankHoliday" />
+          <ScalarProperty Name="JulianDay" ColumnName="JulianDay" />
+          <ScalarProperty Name="WeekOfYear" ColumnName="WeekOfYear" />
+          <ScalarProperty Name="NameOfMonth" ColumnName="NameOfMonth" />
+          <ScalarProperty Name="NameOfDay" ColumnName="NameOfDay" />
+          <ScalarProperty Name="DayNumberOfWeek" ColumnName="DayNumberOfWeek" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="CalendarId" ColumnName="CalendarId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tran_priceMonthly">
+      <EntityTypeMapping TypeName="Dpark3Model.tran_priceMonthly">
+        <MappingFragment StoreEntitySet="tran_priceMonthly">
+          <ScalarProperty Name="priceMonthlyActive" ColumnName="priceMonthlyActive" />
+          <ScalarProperty Name="priceMonthlyValue" ColumnName="priceMonthlyValue" />
+          <ScalarProperty Name="priceMonthlyName" ColumnName="priceMonthlyName" />
+          <ScalarProperty Name="priceMonthlyID" ColumnName="priceMonthlyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SumOfDateSeries">
+      <EntityTypeMapping TypeName="Dpark3Model.SumOfDateSery">
+        <MappingFragment StoreEntitySet="SumOfDateSeries">
+          <ScalarProperty Name="sumOfDate" ColumnName="sumOfDate" />
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tmpHourOnDateSeries">
+      <EntityTypeMapping TypeName="Dpark3Model.tmpHourOnDateSery">
+        <MappingFragment StoreEntitySet="tmpHourOnDateSeries">
+          <ScalarProperty Name="hour_id" ColumnName="hour_id" />
+          <ScalarProperty Name="DateTimeValue" ColumnName="DateTimeValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_accessright">
+      <EntityTypeMapping TypeName="Dpark3Model.view_accessright">
+        <MappingFragment StoreEntitySet="view_accessright">
+          <ScalarProperty Name="sysUserTypePermissionDel" ColumnName="sysUserTypePermissionDel" />
+          <ScalarProperty Name="sysUserTypePermissionEdit" ColumnName="sysUserTypePermissionEdit" />
+          <ScalarProperty Name="sysUserTypePermissionNew" ColumnName="sysUserTypePermissionNew" />
+          <ScalarProperty Name="sysUserTypePermissionRead" ColumnName="sysUserTypePermissionRead" />
+          <ScalarProperty Name="sysUserTypeName" ColumnName="sysUserTypeName" />
+          <ScalarProperty Name="sysUserTypeID" ColumnName="sysUserTypeID" />
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+          <ScalarProperty Name="sysUserLoginName" ColumnName="sysUserLoginName" />
+          <ScalarProperty Name="permissionName" ColumnName="permissionName" />
+          <ScalarProperty Name="permissionID" ColumnName="permissionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_accounting_all">
+      <EntityTypeMapping TypeName="Dpark3Model.view_accounting_all">
+        <MappingFragment StoreEntitySet="view_accounting_all">
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_accountingWithNumPerson">
+      <EntityTypeMapping TypeName="Dpark3Model.view_accountingWithNumPerson">
+        <MappingFragment StoreEntitySet="view_accountingWithNumPerson">
+          <ScalarProperty Name="cancleProblemComment" ColumnName="cancleProblemComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="realNumOfPerson" ColumnName="realNumOfPerson" />
+          <ScalarProperty Name="numOfPerson" ColumnName="numOfPerson" />
+          <ScalarProperty Name="accountingComment" ColumnName="accountingComment" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_Emergency_ALL">
+      <EntityTypeMapping TypeName="Dpark3Model.view_Emergency_ALL">
+        <MappingFragment StoreEntitySet="view_Emergency_ALL">
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_EStamp_log">
+      <EntityTypeMapping TypeName="Dpark3Model.view_EStamp_log">
+        <MappingFragment StoreEntitySet="view_EStamp_log">
+          <ScalarProperty Name="priceProfileChangeLogComment" ColumnName="priceProfileChangeLogComment" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="newProfile" ColumnName="newProfile" />
+          <ScalarProperty Name="oldProfile" ColumnName="oldProfile" />
+          <ScalarProperty Name="priceProfileChangeLogDateTime" ColumnName="priceProfileChangeLogDateTime" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="priceProfileChangeLogID" ColumnName="priceProfileChangeLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_EStamp_log_DisTinc_transID">
+      <EntityTypeMapping TypeName="Dpark3Model.view_EStamp_log_DisTinc_transID">
+        <MappingFragment StoreEntitySet="view_EStamp_log_DisTinc_transID">
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="priceProfileChangeLogDateTime" ColumnName="priceProfileChangeLogDateTime" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="Last_priceProfileChangeLogID" ColumnName="Last_priceProfileChangeLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_parkingAreaInfo">
+      <EntityTypeMapping TypeName="Dpark3Model.view_parkingAreaInfo">
+        <MappingFragment StoreEntitySet="view_parkingAreaInfo">
+          <ScalarProperty Name="parkingAreaSlotRemain" ColumnName="parkingAreaSlotRemain" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="parkingAreaSlotAvaliable" ColumnName="parkingAreaSlotAvaliable" />
+          <ScalarProperty Name="parkingAreaName" ColumnName="parkingAreaName" />
+          <ScalarProperty Name="parkingAreaID" ColumnName="parkingAreaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_priceProfile">
+      <EntityTypeMapping TypeName="Dpark3Model.view_priceProfile">
+        <MappingFragment StoreEntitySet="view_priceProfile">
+          <ScalarProperty Name="priceProfileFlooringOffset" ColumnName="priceProfileFlooringOffset" />
+          <ScalarProperty Name="priceProfileColor" ColumnName="priceProfileColor" />
+          <ScalarProperty Name="priceProfileDiscountInCashier" ColumnName="priceProfileDiscountInCashier" />
+          <ScalarProperty Name="priceProfileHourRate" ColumnName="priceProfileHourRate" />
+          <ScalarProperty Name="priceProfileHourNo" ColumnName="priceProfileHourNo" />
+          <ScalarProperty Name="priceProfileHourID" ColumnName="priceProfileHourID" />
+          <ScalarProperty Name="priceProfileDayNumOfDay" ColumnName="priceProfileDayNumOfDay" />
+          <ScalarProperty Name="priceProfileDayServiceCharge" ColumnName="priceProfileDayServiceCharge" />
+          <ScalarProperty Name="priceProfileDayFreeTime" ColumnName="priceProfileDayFreeTime" />
+          <ScalarProperty Name="priceProfileTypeID" ColumnName="priceProfileTypeID" />
+          <ScalarProperty Name="ticketMemberTypeID" ColumnName="ticketMemberTypeID" />
+          <ScalarProperty Name="priceProfileMultiOverNightMode" ColumnName="priceProfileMultiOverNightMode" />
+          <ScalarProperty Name="priceProfileOverNightFee" ColumnName="priceProfileOverNightFee" />
+          <ScalarProperty Name="priceProfileLostCardFee" ColumnName="priceProfileLostCardFee" />
+          <ScalarProperty Name="priceProfileFlooringMode" ColumnName="priceProfileFlooringMode" />
+          <ScalarProperty Name="carTypeID" ColumnName="carTypeID" />
+          <ScalarProperty Name="priceProfileActive" ColumnName="priceProfileActive" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="priceProfileDayID" ColumnName="priceProfileDayID" />
+          <ScalarProperty Name="priceProfileID" ColumnName="priceProfileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_ticketInfo">
+      <EntityTypeMapping TypeName="Dpark3Model.view_ticketInfo">
+        <MappingFragment StoreEntitySet="view_ticketInfo">
+          <ScalarProperty Name="priceMonthlyID" ColumnName="priceMonthlyID" />
+          <ScalarProperty Name="ticketRemainSecond" ColumnName="ticketRemainSecond" />
+          <ScalarProperty Name="ticketRemainDay" ColumnName="ticketRemainDay" />
+          <ScalarProperty Name="carID" ColumnName="carID" />
+          <ScalarProperty Name="ticketMemberAddr" ColumnName="ticketMemberAddr" />
+          <ScalarProperty Name="ticketMemberEmail" ColumnName="ticketMemberEmail" />
+          <ScalarProperty Name="ticketMemberTel" ColumnName="ticketMemberTel" />
+          <ScalarProperty Name="carColor" ColumnName="carColor" />
+          <ScalarProperty Name="carModel" ColumnName="carModel" />
+          <ScalarProperty Name="ticketMemberTypeName" ColumnName="ticketMemberTypeName" />
+          <ScalarProperty Name="provinceName" ColumnName="provinceName" />
+          <ScalarProperty Name="carTypeName" ColumnName="carTypeName" />
+          <ScalarProperty Name="carBrandName" ColumnName="carBrandName" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="userID_Create" ColumnName="userID_Create" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="ticketDateUpdate" ColumnName="ticketDateUpdate" />
+          <ScalarProperty Name="ticketCredit" ColumnName="ticketCredit" />
+          <ScalarProperty Name="ticketRemainTimes" ColumnName="ticketRemainTimes" />
+          <ScalarProperty Name="ticketActive" ColumnName="ticketActive" />
+          <ScalarProperty Name="ticketExpiryDate" ColumnName="ticketExpiryDate" />
+          <ScalarProperty Name="ticketStartDate" ColumnName="ticketStartDate" />
+          <ScalarProperty Name="ticketTypeName" ColumnName="ticketTypeName" />
+          <ScalarProperty Name="ticketTypeID" ColumnName="ticketTypeID" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="ticketMemberID" ColumnName="ticketMemberID" />
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_transaction_all">
+      <EntityTypeMapping TypeName="Dpark3Model.view_transaction_all">
+        <MappingFragment StoreEntitySet="view_transaction_all">
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="priceProfileColor" ColumnName="priceProfileColor" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_transaction_all_parkingTime">
+      <EntityTypeMapping TypeName="Dpark3Model.view_transaction_all_parkingTime">
+        <MappingFragment StoreEntitySet="view_transaction_all_parkingTime">
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="parkingTime" ColumnName="parkingTime" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="view_VMS_log_stayTime">
+      <EntityTypeMapping TypeName="Dpark3Model.view_VMS_log_stayTime">
+        <MappingFragment StoreEntitySet="view_VMS_log_stayTime">
+          <ScalarProperty Name="MinuteDiff" ColumnName="MinuteDiff" />
+          <ScalarProperty Name="lostCard" ColumnName="lostCard" />
+          <ScalarProperty Name="visitArea" ColumnName="visitArea" />
+          <ScalarProperty Name="visitorCardLocation" ColumnName="visitorCardLocation" />
+          <ScalarProperty Name="visitorImg3" ColumnName="visitorImg3" />
+          <ScalarProperty Name="visitorImg2" ColumnName="visitorImg2" />
+          <ScalarProperty Name="visitorImg1" ColumnName="visitorImg1" />
+          <ScalarProperty Name="ticketId" ColumnName="ticketId" />
+          <ScalarProperty Name="tosee_addr" ColumnName="tosee_addr" />
+          <ScalarProperty Name="tosee_name" ColumnName="tosee_name" />
+          <ScalarProperty Name="visitorChkOut" ColumnName="visitorChkOut" />
+          <ScalarProperty Name="visitorChkIn" ColumnName="visitorChkIn" />
+          <ScalarProperty Name="visitorCompany" ColumnName="visitorCompany" />
+          <ScalarProperty Name="visit_person_id" ColumnName="visit_person_id" />
+          <ScalarProperty Name="visit_purpose" ColumnName="visit_purpose" />
+          <ScalarProperty Name="visitorEmail" ColumnName="visitorEmail" />
+          <ScalarProperty Name="visitorCarNumber" ColumnName="visitorCarNumber" />
+          <ScalarProperty Name="visitorTel" ColumnName="visitorTel" />
+          <ScalarProperty Name="visitorNote" ColumnName="visitorNote" />
+          <ScalarProperty Name="visitorName" ColumnName="visitorName" />
+          <ScalarProperty Name="logId" ColumnName="logId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Dpark3Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Dpark3Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Dpark3Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Dpark3Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Dpark3Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Dpark3Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Dpark3Model.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="stProDate" FunctionName="Dpark3Model.Store.stProDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.stProDate_Result">
+          <ScalarProperty Name="DateValue" ColumnName="DateValue" />
+          <ScalarProperty Name="sumOfDate" ColumnName="sumOfDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="stProDateOnMonth" FunctionName="Dpark3Model.Store.stProDateOnMonth">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.stProDateOnMonth_Result">
+          <ScalarProperty Name="MonthSeries" ColumnName="MonthSeries" />
+          <ScalarProperty Name="SumOfMonth" ColumnName="SumOfMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="stProHourOnDate" FunctionName="Dpark3Model.Store.stProHourOnDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.stProHourOnDate_Result">
+          <ScalarProperty Name="hour_id" ColumnName="hour_id" />
+          <ScalarProperty Name="SumOfHour" ColumnName="SumOfHour" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="stProYear" FunctionName="Dpark3Model.Store.stProYear">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.stProYear_Result">
+          <ScalarProperty Name="YearValue" ColumnName="YearValue" />
+          <ScalarProperty Name="SumOfYear" ColumnName="SumOfYear" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_accounting_all_bydate_userID_accType" FunctionName="Dpark3Model.Store.tr_accounting_all_bydate_userID_accType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_accounting_all_bydate_userID_accType_Result">
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_accounting_saleTicket_bydate_userID_accType" FunctionName="Dpark3Model.Store.tr_accounting_saleTicket_bydate_userID_accType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_accounting_saleTicket_bydate_userID_accType_Result">
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingComment" ColumnName="accountingComment" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_accounting_with_numperson" FunctionName="Dpark3Model.Store.tr_accounting_with_numperson">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_accounting_with_numperson_Result">
+          <ScalarProperty Name="accountingID" ColumnName="accountingID" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="accountingTypeName" ColumnName="accountingTypeName" />
+          <ScalarProperty Name="accountingTypeID" ColumnName="accountingTypeID" />
+          <ScalarProperty Name="numOfPerson" ColumnName="numOfPerson" />
+          <ScalarProperty Name="realNumOfPerson" ColumnName="realNumOfPerson" />
+          <ScalarProperty Name="accountingComment" ColumnName="accountingComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="cancleProblemComment" ColumnName="cancleProblemComment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_report_cashier" FunctionName="Dpark3Model.Store.tr_report_cashier">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_report_cashier_Result">
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+          <ScalarProperty Name="ChkOutUser" ColumnName="ChkOutUser" />
+          <ScalarProperty Name="tranChkOut" ColumnName="tranChkOut" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="countOfChkOut" ColumnName="countOfChkOut" />
+          <ScalarProperty Name="countPaymentTime" ColumnName="countPaymentTime" />
+          <ScalarProperty Name="countEStamp" ColumnName="countEStamp" />
+          <ScalarProperty Name="countEmergency" ColumnName="countEmergency" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_report_cashier_sum" FunctionName="Dpark3Model.Store.tr_report_cashier_sum">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_report_cashier_sum_Result">
+          <ScalarProperty Name="sysUserID" ColumnName="sysUserID" />
+          <ScalarProperty Name="ChkOutUser" ColumnName="ChkOutUser" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="countOfChkOut" ColumnName="countOfChkOut" />
+          <ScalarProperty Name="countPaymentTime" ColumnName="countPaymentTime" />
+          <ScalarProperty Name="countEStamp" ColumnName="countEStamp" />
+          <ScalarProperty Name="countEmergency" ColumnName="countEmergency" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_ticket_moreInfo" FunctionName="Dpark3Model.Store.tr_ticket_moreInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_ticket_moreInfo_Result">
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="ticketTypeName" ColumnName="ticketTypeName" />
+          <ScalarProperty Name="ticketMemberTypeName" ColumnName="ticketMemberTypeName" />
+          <ScalarProperty Name="priceMonthlyName" ColumnName="priceMonthlyName" />
+          <ScalarProperty Name="ticketMemberTel" ColumnName="ticketMemberTel" />
+          <ScalarProperty Name="ticketMemberEmail" ColumnName="ticketMemberEmail" />
+          <ScalarProperty Name="ticketMemberAddr" ColumnName="ticketMemberAddr" />
+          <ScalarProperty Name="ticketStartDate" ColumnName="ticketStartDate" />
+          <ScalarProperty Name="ticketExpiryDate" ColumnName="ticketExpiryDate" />
+          <ScalarProperty Name="ticketRemainDay" ColumnName="ticketRemainDay" />
+          <ScalarProperty Name="ticketActive" ColumnName="ticketActive" />
+          <ScalarProperty Name="carModel" ColumnName="carModel" />
+          <ScalarProperty Name="carColor" ColumnName="carColor" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="provinceName" ColumnName="provinceName" />
+          <ScalarProperty Name="carBrandName" ColumnName="carBrandName" />
+          <ScalarProperty Name="carTypeName" ColumnName="carTypeName" />
+          <ScalarProperty Name="sysUserLoginName" ColumnName="sysUserLoginName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_ticket_paymentHistory" FunctionName="Dpark3Model.Store.tr_ticket_paymentHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_ticket_paymentHistory_Result">
+          <ScalarProperty Name="ticketID" ColumnName="ticketID" />
+          <ScalarProperty Name="accountingDateTime" ColumnName="accountingDateTime" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_allTime_byCarPlateNumber" FunctionName="Dpark3Model.Store.tr_transaction_allTime_byCarPlateNumber">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_allTime_byCarPlateNumber_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_allTime_bydate" FunctionName="Dpark3Model.Store.tr_transaction_allTime_bydate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_allTime_bydate_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="sysUserID_ChkOut" ColumnName="sysUserID_ChkOut" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_Emergency" FunctionName="Dpark3Model.Store.tr_transaction_Emergency">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_Emergency_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_ForceChkOut_byCarPlateNumber" FunctionName="Dpark3Model.Store.tr_transaction_ForceChkOut_byCarPlateNumber">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_ForceChkOut_byCarPlateNumber_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+          <ScalarProperty Name="gateID" ColumnName="gateID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_InParking" FunctionName="Dpark3Model.Store.tr_transaction_InParking">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_InParking_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_InParking_byCarPlateNumber" FunctionName="Dpark3Model.Store.tr_transaction_InParking_byCarPlateNumber">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_InParking_byCarPlateNumber_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_IsLostCard_byCarPlateNumber" FunctionName="Dpark3Model.Store.tr_transaction_IsLostCard_byCarPlateNumber">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_IsLostCard_byCarPlateNumber_Result">
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="sysUserIn" ColumnName="sysUserIn" />
+          <ScalarProperty Name="sysUserOut" ColumnName="sysUserOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+          <ScalarProperty Name="transactionLastUpdate" ColumnName="transactionLastUpdate" />
+          <ScalarProperty Name="transactionComment" ColumnName="transactionComment" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_moreInfo" FunctionName="Dpark3Model.Store.tr_transaction_moreInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_moreInfo_Result">
+          <ScalarProperty Name="transactionChkIn" ColumnName="transactionChkIn" />
+          <ScalarProperty Name="transactionChkOut" ColumnName="transactionChkOut" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="transactionTypeName" ColumnName="transactionTypeName" />
+          <ScalarProperty Name="transactionParkingTime" ColumnName="transactionParkingTime" />
+          <ScalarProperty Name="ticketStartDate" ColumnName="ticketStartDate" />
+          <ScalarProperty Name="ticketExpiryDate" ColumnName="ticketExpiryDate" />
+          <ScalarProperty Name="accountingPrices" ColumnName="accountingPrices" />
+          <ScalarProperty Name="accountingDiscount" ColumnName="accountingDiscount" />
+          <ScalarProperty Name="accountingReceive" ColumnName="accountingReceive" />
+          <ScalarProperty Name="TicketUserCreate" ColumnName="TicketUserCreate" />
+          <ScalarProperty Name="TranChkInSysUser" ColumnName="TranChkInSysUser" />
+          <ScalarProperty Name="TranChKOutSysUser" ColumnName="TranChKOutSysUser" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="ticketTypeName" ColumnName="ticketTypeName" />
+          <ScalarProperty Name="ticketMemberName" ColumnName="ticketMemberName" />
+          <ScalarProperty Name="ticketMemberTypeName" ColumnName="ticketMemberTypeName" />
+          <ScalarProperty Name="ticketMemberTel" ColumnName="ticketMemberTel" />
+          <ScalarProperty Name="ticketMemberAddr" ColumnName="ticketMemberAddr" />
+          <ScalarProperty Name="ticketMemberEmail" ColumnName="ticketMemberEmail" />
+          <ScalarProperty Name="ticketMemberActive" ColumnName="ticketMemberActive" />
+          <ScalarProperty Name="carModel" ColumnName="carModel" />
+          <ScalarProperty Name="carColor" ColumnName="carColor" />
+          <ScalarProperty Name="carTypeName" ColumnName="carTypeName" />
+          <ScalarProperty Name="carBrandName" ColumnName="carBrandName" />
+          <ScalarProperty Name="provinceName" ColumnName="provinceName" />
+          <ScalarProperty Name="priceProfileName" ColumnName="priceProfileName" />
+          <ScalarProperty Name="gateIn" ColumnName="gateIn" />
+          <ScalarProperty Name="gateOut" ColumnName="gateOut" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="carPlateCity" ColumnName="carPlateCity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="tr_transaction_Stamp_Log" FunctionName="Dpark3Model.Store.tr_transaction_Stamp_Log">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dpark3Model.tr_transaction_Stamp_Log_Result">
+          <ScalarProperty Name="priceProfileChangeLogID" ColumnName="priceProfileChangeLogID" />
+          <ScalarProperty Name="transactionID" ColumnName="transactionID" />
+          <ScalarProperty Name="ticketNumber" ColumnName="ticketNumber" />
+          <ScalarProperty Name="carPlateNumber" ColumnName="carPlateNumber" />
+          <ScalarProperty Name="priceProfileChangeLogDateTime" ColumnName="priceProfileChangeLogDateTime" />
+          <ScalarProperty Name="oldProfile" ColumnName="oldProfile" />
+          <ScalarProperty Name="newProfile" ColumnName="newProfile" />
+          <ScalarProperty Name="sysUserName" ColumnName="sysUserName" />
+          <ScalarProperty Name="priceProfileChangeLogComment" ColumnName="priceProfileChangeLogComment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
